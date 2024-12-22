@@ -1,0 +1,39 @@
+/* General Reset */
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow: hidden; /* Prevent scrolling */
+  }
+  
+  /* Container for the landing screen */
+  .home-container {
+    position: relative;
+    width: 100%;
+    height: 100vh; /* Full viewport height */
+    background: url("../assets/Homepage.png") no-repeat center center/cover; /* Responsive image */
+  }
+  
+  /* Text content positioned over the image */
+  .home-content {
+    position: absolute;
+    top: 36%;
+    left: 28%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.6); /* Add text shadow for visibility */
+  }
+  
+  .home-title {
+    font-size: 2.8rem;
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+  }
+  
+  .home-subtitle {
+    font-size: 1.5rem;
+    font-family: "Open Sans", sans-serif;
+    margin-top: 1rem;
+  }
+  

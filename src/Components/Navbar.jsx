@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "./Navbar.css";
 import Logo from "../assets/Medilogo.png";
 
@@ -7,21 +8,20 @@ const Navbar = () => {
     <nav className="navbar">
       <div className="navbar-logo">
         <img src={Logo} alt="MediqemPharma Logo" className="logo-image" />
-        
       </div>
-      <h2 className="navbar-title">"Committed to quality"</h2>
+      
       <ul className="navbar-links">
         <li>
-          <a href="#home">Home</a>
+          <Link to="/">Home</Link>
         </li>
         <li>
-          <a href="#products">Products</a>
+          <Link to="/products">Products</Link>
         </li>
         <li>
-          <a href="#contact">Contact</a>
+          <Link to="/contact">Contact</Link>
         </li>
         <li>
-          <a href="#About">About</a>
+          <Link to="/about">About</Link>
         </li>
       </ul>
     </nav>

@@ -15,7 +15,11 @@ body,ul,li {
   padding: 0.8rem 2rem;
   background-color:#ffffff;
   color: rgb(255, 255, 255);
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  box-shadow: 8px 10px 10px 5px rgba(0, 0, 0, 0.1);
+  position: relative;
+  z-index: 1;
+ 
+
 }
 
 .navbar-logo {
@@ -51,14 +55,14 @@ body,ul,li {
     background-clip: text; 
     -webkit-background-clip: text; 
     -webkit-text-fill-color: transparent; 
-    padding-left: 90px;
+    
   }
   
 
 /* Navigation Links */
 .navbar-links {
   display: flex;
-  gap: 2.5rem;
+  gap: 5.5rem;
 }
 
 .navbar-links a {
