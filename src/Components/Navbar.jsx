@@ -7,8 +7,9 @@ const Navbar = () => {
     <nav className="navbar">
       <div className="navbar-logo">
         <img src={Logo} alt="MediqemPharma Logo" className="logo-image" />
-        <h1 className="navbar-title"></h1>
+        
       </div>
+      <h2 className="navbar-title">"Committed to quality"</h2>
       <ul className="navbar-links">
         <li>
           <a href="#home">Home</a>
@@ -18,6 +19,9 @@ const Navbar = () => {
         </li>
         <li>
           <a href="#contact">Contact</a>
+        </li>
+        <li>
+          <a href="#About">About</a>
         </li>
       </ul>
     </nav>
