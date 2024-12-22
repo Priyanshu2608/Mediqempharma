@@ -13,11 +13,11 @@ body,ul,li {
   justify-content: space-between;
   align-items: center;
   padding: 0.8rem 2rem;
-  background-color:#ffffff;
-  color: rgb(255, 255, 255);
+  background-color:#f5f9fc;
   box-shadow: 8px 10px 10px 5px rgba(0, 0, 0, 0.1);
   position: relative;
   z-index: 1;
+  
  
 
 }

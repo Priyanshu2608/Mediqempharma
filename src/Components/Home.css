@@ -1,39 +1,77 @@
-/* General Reset */
 body, html {
-    margin: 0;
-    padding: 0;
-    height: 100%;
-    overflow: hidden; /* Prevent scrolling */
-  }
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  overflow-y: scroll; 
+  scroll-behavior: smooth; 
+}
+
+
+.home-container {
+  position: relative;
+  width: 100%;
+  height: 100vh; 
+  background: url("../assets/Homepage.png") no-repeat center center/cover; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
   
-  /* Container for the landing screen */
-  .home-container {
-    position: relative;
-    width: 100%;
-    height: 100vh; /* Full viewport height */
-    background: url("../assets/Homepage.png") no-repeat center center/cover; /* Responsive image */
-  }
-  
-  /* Text content positioned over the image */
-  .home-content {
-    position: absolute;
-    top: 36%;
-    left: 28%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-    color: white;
-    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.6); /* Add text shadow for visibility */
-  }
-  
-  .home-title {
-    font-size: 2.8rem;
-    font-family: "Poppins", sans-serif;
-    margin: 0;
-  }
-  
-  .home-subtitle {
-    font-size: 1.5rem;
-    font-family: "Open Sans", sans-serif;
-    margin-top: 1rem;
-  }
-  
+}
+
+
+.home-content {
+  position: absolute;
+  top: 43%;
+  left: 27%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+  text-shadow: 0 3px 4px rgba(0, 0, 0, 0.6);
+}
+
+.home-title {
+  font-size: 3rem;
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+}
+
+.home-subtitle {
+  font-size: 1.8rem;
+  font-family: "Open Sans", sans-serif;
+  margin-top: 1rem;
+  font-style: italic;
+}
+
+
+.know-more-btn {
+  margin-top: 20px;
+  padding: 15px 30px;
+  font-size: 1.2rem;
+  background-color: #002781; 
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 10px;
+  font-weight: bold;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.know-more-btn:hover {
+  background-color: #4577a0; 
+  transform: scale(1.05); 
+}
+
+.know-more-btn:focus {
+  outline: none; 
+}
+
+
+.next-section {
+  height: 100vh; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f1f1f1;
+  color: #333;
+  text-align: center;
+}
