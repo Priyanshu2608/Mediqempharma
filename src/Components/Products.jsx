@@ -1,6 +1,7 @@
 import React, { useRef } from "react";
 import "./Product.css";
 import Product1 from './Productpages/Productpage1.jsx';
+import Footer from "./Footer.jsx";
 
 const Products = () => {
    const nextSectionRef = useRef(null);
@@ -11,6 +12,7 @@ const Products = () => {
       }
     };
   return (
+    <>
     <div>
       <div className="product-container">
         <div className="product-content">
@@ -28,6 +30,8 @@ const Products = () => {
       <Product1/>
       </div>
     </div>
+    <Footer/>
+    </>
   );
 };
 
