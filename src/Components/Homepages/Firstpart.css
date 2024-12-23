@@ -1,136 +1,128 @@
 /* General Container */
 .container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 40px;
-    background-color: #f8f8f8; /* Light background color for contrast */
-    font-family: 'Arial', sans-serif;
-  }
-  
-  /* Box Container */
-  .boxes {
-    margin-bottom: 50px;
-  }
-  
-  .box {
-    background-color: #ffffff;
-    border-radius: 12px;
-    padding: 30px;
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
-    text-align: center;
-    margin-bottom: 40px; /* Ensure spacing between boxes */
-  }
-  
-  .box h2 {
-    font-size: 2.5rem;
-    color: #005a8d;
-    margin-bottom: 20px;
-    font-weight: bold;
-  }
-  
-  .box p {
-    font-size: 1.2rem;
-    color: #666;
-    line-height: 1.6;
-    font-style: italic;
-    margin: 0;
-  }
-  
-  /* Card Container (Ensure all cards stay in one line) */
-  .cards {
-    display: flex;
-    justify-content: space-between;
-    gap: 30px;
-    flex-wrap: nowrap; /* Ensures the cards stay in one row */
-    margin-top: 40px;
-  }
-  
-  .card {
-    background-color: #ffffff;
-    border-radius: 10px;
-    padding: 25px;
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
-    width: 30%; /* Ensures 3 cards in a row */
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-  }
-  
-  .card img {
-    width: 120px;
-    height: 120px;
-    border-radius: 50%;
-    object-fit: cover;
-    margin-bottom: 20px;
-  }
-  
-  .card h3 {
-    font-size: 1.6rem;
-    color: #005a8d;
-    margin-bottom: 15px;
-    font-weight: bold;
-  }
-  
-  .card p {
-    font-size: 1.1rem;
-    color: #666;
-    line-height: 1.5;
-    font-weight: 300;
-  }
-  
-  /* Hover Effect for Cards */
-  .card:hover {
-    transform: translateY(-8px);
-    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
-  }
-  
-  .card img:hover {
-    transform: scale(1.1);
-  }
- /* Image Container */
-.image-container {
-  position: relative;
-  display: inline-block;
-  width: 100%; /* Adjust according to your needs */
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px;
+  background-color: #f8f8f8;
+  font-family: 'Arial', sans-serif;
+}
+
+/* Box Container */
+.boxes {
+  margin-bottom: 50px;
+}
+
+.box {
+  background-color: #ffffff;
+  border-radius: 12px;
+  padding: 30px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.box h2 {
+  font-size: 2.5rem;
+  color: #005a8d;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+.box h4 {
+  font-size: 1.2rem;
+  color: #666;
+  line-height: 1.6;
+  font-style: italic;
+}
+
+/* Card Container */
+.cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 cards per row */
+  gap: 30px; /* Spacing between cards */
   margin-top: 40px;
 }
 
-/* The Image */
-.image-container .pic1 {
-  width: 100%; /* Ensure image fills the container */
-  height: 100%;
- 
+.card {
+  background-color: #ffffff;
+  border-radius: 10px;
+  padding: 25px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-/* Text Overlay */
-.image-container .image-text {
-  position: absolute;
-  top: 39%; /* Position at the center of the image */
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: white; /* Text color for contrast */
-  font-size: 2.12rem; /* Adjust size as needed */
-  font-weight: bold;
-  text-align: center;
-  font-family: "poppins";
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Add a shadow for better readability */
+.card img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 20px;
 }
+
+.card h3 {
+  font-size: 1.6rem;
+  color: #005a8d;
+  margin-bottom: 15px;
+  font-weight: bold;
+}
+
+.card p {
+  font-size: 1.1rem;
+  color: #666;
+  line-height: 1.5;
+  font-weight: 300;
+}
+
+/* Hover Effect for Cards */
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+}
+
+.card img:hover {
+  transform: scale(1.1);
+}
+
+/* Image Container */
+.image-container {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  margin-top: 40px;
+}
+
+.image-container .pic1 {
+  width: 100%;
+  height: 100%;
+}
+
+.image-container .image-text,
 .image-container .image-des {
   position: absolute;
-  top: 61%; /* Position at the center of the image */
   left: 50%;
   transform: translate(-50%, -50%);
-  color: white; /* Text color for contrast */
-  font-size: 29px; /* Adjust size as needed */
-  font-weight: 500;
-  text-align: center;
-  font-style: italic;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Add a shadow for better readability */
+  color: white;
+  font-size: 2.12rem;
+  font-family: "Poppins";
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
 }
 
-/* Button for "View Products" */
+.image-container .image-text {
+  top: 39%;
+  left:50%;
+  text-align: center;
+  font-weight: bold;
+}
+
+.image-container .image-des {
+  top: 62%;
+  font-size: 26px;
+  text-align: center;
+  font-weight: 500;
+  font-style: italic;
+}
+
 .view-products-btn {
   display: inline-block;
   padding: 12px 24px;
@@ -141,57 +133,25 @@
   font-size: 1.2rem;
   font-weight: bold;
   cursor: pointer;
-  transition: background-color 0.3s ease, transform 0.3s ease;
   text-align: center;
-  text-decoration: none; /* Removes underline from links */
-  margin-top: -50px; /* Adds spacing above the button */
-  transform: translate(-0%, -300%);
+  text-decoration: none;
+  margin-top: -50px;
+  transform: translate(-0%, -240%);
 }
 
 .view-products-btn:hover {
   background-color: #003f66;
-  
 }
 
- 
-  
-  /* Responsive Design */
-  @media (max-width: 1200px) {
-    .cards {
-      justify-content: space-between;
-    }
-    .card {
-      width: 30%; /* 3 cards per row */
-    }
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .cards {
+      grid-template-columns: repeat(2, 1fr);
   }
-  
-  @media (max-width: 1024px) {
-    .card {
-      width: 45%; /* Two cards in a row on medium screens */
-    }
+}
+
+@media (max-width: 768px) {
+  .cards {
+      grid-template-columns: 1fr;
   }
-  
-  @media (max-width: 768px) {
-    .card {
-      width: 90%; /* Single column on small screens */
-      margin-bottom: 30px;
-    }
-  }
-  
-  @media (max-width: 480px) {
-    .box h2 {
-      font-size: 1.8rem;
-    }
-  
-    .box p {
-      font-size: 1rem;
-    }
-  
-    .card h3 {
-      font-size: 1.4rem;
-    }
-  
-    .card p {
-      font-size: 1rem;
-    }
-  }
+}
