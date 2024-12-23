@@ -1,6 +1,7 @@
 import React, { useRef } from "react";
 import "../Components/Home.css";
 import First from '../Components/Homepages/Firstpart.jsx';
+import Foot from '../Components/Footer.jsx'
 
 
 
@@ -14,6 +15,7 @@ const Home = () => {
   };
 
   return (
+    <>
     <div>
       <div className="home-container">
         <div className="home-content">
@@ -29,6 +31,8 @@ const Home = () => {
       <First />
       </div>
     </div>
+    <Foot/>
+    </>
   );
 };
 

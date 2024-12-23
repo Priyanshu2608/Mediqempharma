@@ -1,0 +1,126 @@
+/* Footer Container */
+.footer {
+    background-color: #005a8d;
+    color: #ffffff;
+    padding: 40px 20px;
+    font-family: 'Arial', sans-serif;
+}
+
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Footer Logo */
+.footer-logo h1 {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.footer-logo p {
+    font-size: 1rem;
+    font-style: italic;
+    margin: 0;
+    color: #cce7f3;
+}
+
+/* Footer Links */
+.footer-links h3,
+.footer-contact h3,
+.footer-social h3 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    color: #ffffff;
+}
+
+.footer-links ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-links ul li {
+    margin-bottom: 10px;
+}
+
+.footer-links ul li a {
+    text-decoration: none;
+    color: #cce7f3;
+    transition: color 0.3s ease;
+}
+
+.footer-links ul li a:hover {
+    color: #ffffff;
+}
+
+/* Footer Contact */
+.footer-contact {
+    flex-basis: 30%; /* Ensure consistent width */
+    max-width: 30%;
+    word-wrap: break-word; /* Ensure long text wraps */
+}
+
+.footer-contact p {
+    margin: 5px 0;
+    font-size: 1rem;
+    line-height: 1.6; /* Add spacing for better readability */
+}
+
+/* Social Media Icons */
+.footer-social .social-icons {
+    display: flex;
+    gap: 15px;
+}
+
+.footer-social .social-icons a {
+    color: #cce7f3;
+    font-size: 1.5rem;
+    transition: color 0.3s ease;
+}
+
+.footer-social .social-icons a:hover {
+    color: #ffffff;
+}
+
+/* Footer Bottom */
+.footer-bottom {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 0.9rem;
+    color: #cce7f3;
+}
+
+.footer-bottom p {
+    margin: 0;
+}
+.footer-logo-image {
+    width: 120px; /* Adjust the size of the logo */
+    height: auto;
+    margin-bottom: 10px; /* Adds spacing between logo and text */
+    display: block;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .footer-links,
+    .footer-contact,
+    .footer-social {
+        margin-top: 20px;
+    }
+
+    .footer-contact {
+        flex-basis: 100%; /* Adjust to full width on small screens */
+        max-width: 100%;
+    }
+}
