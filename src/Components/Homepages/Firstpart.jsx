@@ -1,6 +1,6 @@
 import React from "react";
 import "./Firstpart.css";
-
+import pic1 from '../../assets/pharma2.jpg';
 
 const Firstpart = () => {
     const boxData = [
@@ -30,6 +30,7 @@ const Firstpart = () => {
     ];
 
     return (
+        <>
         <div className="container">
             <div className="boxes">
                 {boxData.map((box, index) => (
@@ -48,7 +49,19 @@ const Firstpart = () => {
                     </div>
                 ))}
             </div>
+            <div className="image-container">
+                <img className="pic1" src={pic1} alt="products" />
+                <div className="image-text">Advancing Healthcare with Excellence</div>
+                <div className="image-des">
+                    At MediqemPharma, we take pride in offering a diverse range of pharmaceutical products designed to meet the highest standards of quality and efficacy. From innovative formulations to trusted generics. Explore our range and discover solutions tailored to improve lives, because at MediqemPharma, we are "Committed to Quality."
+                </div>
+                {/* View Products Button */}
+                <div style={{ textAlign: 'center', marginTop: '20px' }}>
+                    <a href="/products" className="view-products-btn">View Products</a>
+                </div>
+            </div>
         </div>
+        </>
     );
 };
 

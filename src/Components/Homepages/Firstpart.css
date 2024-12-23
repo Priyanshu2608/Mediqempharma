@@ -89,6 +89,71 @@
   .card img:hover {
     transform: scale(1.1);
   }
+ /* Image Container */
+.image-container {
+  position: relative;
+  display: inline-block;
+  width: 100%; /* Adjust according to your needs */
+  margin-top: 40px;
+}
+
+/* The Image */
+.image-container .pic1 {
+  width: 100%; /* Ensure image fills the container */
+  height: 100%;
+ 
+}
+
+/* Text Overlay */
+.image-container .image-text {
+  position: absolute;
+  top: 39%; /* Position at the center of the image */
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white; /* Text color for contrast */
+  font-size: 2.12rem; /* Adjust size as needed */
+  font-weight: bold;
+  text-align: center;
+  font-family: "poppins";
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Add a shadow for better readability */
+}
+.image-container .image-des {
+  position: absolute;
+  top: 61%; /* Position at the center of the image */
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white; /* Text color for contrast */
+  font-size: 29px; /* Adjust size as needed */
+  font-weight: 500;
+  text-align: center;
+  font-style: italic;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Add a shadow for better readability */
+}
+
+/* Button for "View Products" */
+.view-products-btn {
+  display: inline-block;
+  padding: 12px 24px;
+  background-color: #005a8d;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  text-align: center;
+  text-decoration: none; /* Removes underline from links */
+  margin-top: -50px; /* Adds spacing above the button */
+  transform: translate(-0%, -300%);
+}
+
+.view-products-btn:hover {
+  background-color: #003f66;
+  
+}
+
+ 
   
   /* Responsive Design */
   @media (max-width: 1200px) {
@@ -130,4 +195,3 @@
       font-size: 1rem;
     }
   }
-  
