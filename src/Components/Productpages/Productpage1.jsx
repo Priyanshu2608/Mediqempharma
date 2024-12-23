@@ -1,15 +1,16 @@
 // ProductsPage.jsx
 import React, { useState } from "react";
 import "./Productpage1.css"; // For styling
+import moxi from '../../assets/MOXIQEM.png';
 
 const products = [
   {
     id: 1,
-    name: "Product 1",
-    image: "path/to/image1.jpg",
-    shortDescription: "A brief description of Product 1.",
+    name: "MOXIQEM-CV",
+    image: moxi,
+    shortDescription: "Amoxycillin + Clavulanic Acid",
     description: "Detailed information about Product 1, including its features, usage, and technical details.",
-    features: ["Feature 1", "Feature 2", "Feature 3"],
+    features: ["Broad spectrum coverage against ä aerobic and anaerobic dental pathogens", "Adequate GCF concentraons & ä favorable suscepbility", "Proven clinical efficacy in odontogenic ä infecons (upto 96%)"],
     technicalInfo: "Dosage: XYZ, Ingredients: ABC, Storage: Cool & Dry Place"
   },
   {
