@@ -1,0 +1,133 @@
+/* General Container */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px;
+    background-color: #f8f8f8; /* Light background color for contrast */
+    font-family: 'Arial', sans-serif;
+  }
+  
+  /* Box Container */
+  .boxes {
+    margin-bottom: 50px;
+  }
+  
+  .box {
+    background-color: #ffffff;
+    border-radius: 12px;
+    padding: 30px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin-bottom: 40px; /* Ensure spacing between boxes */
+  }
+  
+  .box h2 {
+    font-size: 2.5rem;
+    color: #005a8d;
+    margin-bottom: 20px;
+    font-weight: bold;
+  }
+  
+  .box p {
+    font-size: 1.2rem;
+    color: #666;
+    line-height: 1.6;
+    font-style: italic;
+    margin: 0;
+  }
+  
+  /* Card Container (Ensure all cards stay in one line) */
+  .cards {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    flex-wrap: nowrap; /* Ensures the cards stay in one row */
+    margin-top: 40px;
+  }
+  
+  .card {
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 25px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    width: 30%; /* Ensures 3 cards in a row */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .card img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 20px;
+  }
+  
+  .card h3 {
+    font-size: 1.6rem;
+    color: #005a8d;
+    margin-bottom: 15px;
+    font-weight: bold;
+  }
+  
+  .card p {
+    font-size: 1.1rem;
+    color: #666;
+    line-height: 1.5;
+    font-weight: 300;
+  }
+  
+  /* Hover Effect for Cards */
+  .card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+  }
+  
+  .card img:hover {
+    transform: scale(1.1);
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 1200px) {
+    .cards {
+      justify-content: space-between;
+    }
+    .card {
+      width: 30%; /* 3 cards per row */
+    }
+  }
+  
+  @media (max-width: 1024px) {
+    .card {
+      width: 45%; /* Two cards in a row on medium screens */
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .card {
+      width: 90%; /* Single column on small screens */
+      margin-bottom: 30px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .box h2 {
+      font-size: 1.8rem;
+    }
+  
+    .box p {
+      font-size: 1rem;
+    }
+  
+    .card h3 {
+      font-size: 1.4rem;
+    }
+  
+    .card p {
+      font-size: 1rem;
+    }
+  }
+  

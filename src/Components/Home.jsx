@@ -1,5 +1,6 @@
 import React, { useRef } from "react";
 import "../Components/Home.css";
+import First from '../Components/Homepages/Firstpart.jsx'
 
 const Home = () => {
   const nextSectionRef = useRef(null);
@@ -24,8 +25,7 @@ const Home = () => {
 
       {/* Next Section */}
       <div ref={nextSectionRef} className="next-section">
-        <h2>Next Section</h2>
-        <p>This is where more content will be.</p>
+        <First />
       </div>
     </div>
   );
