@@ -1,0 +1,174 @@
+.contact-container {
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+  }
+  
+  .contact-info-section {
+    padding-top: 20px;
+    animation: fadeIn 1.5s ease-in-out;
+    text-align: center;
+  }
+  
+  .section-heading {
+    font-size: 40px;
+    color: #007BFF;
+    margin-bottom: 20px;
+  }
+  
+  .contact-info {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+  }
+  
+  .info-box {
+    display: flex;
+    align-items: center;
+    width: 400px;
+    padding: 20px;
+    border: 2px solid #007BFF;
+    border-radius: 10px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    animation: slideIn 1s ease-in-out;
+  }
+  
+  .info-icon {
+    font-size: 40px;
+    margin-right: 15px;
+    color: #007BFF;
+  }
+  
+  .info-text h3 {
+    margin: 0;
+    font-size: 20px;
+    color: #333;
+  }
+  
+  .info-detail {
+    margin: 5px 0 0;
+    font-size: 16px;
+    font-weight: 600;
+    color: #555;
+  }
+  
+  /* Social Media Icons */
+  .social-media-icons a {
+    font-size: 30px;
+    color: #007BFF;
+    margin: 0 15px;
+    text-decoration: none;
+  }
+  
+  .social-media-icons a:hover {
+    color: #0056b3;
+  }
+  
+  /* Map Container */
+  .map-container {
+    margin: 20px auto;
+    max-width: 600px;
+    border: 2px solid #007BFF;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 1.5s ease-in-out;
+  }
+  
+  /* Reviews Section */
+  .reviews-section {
+    margin-top: 40px;
+    background-color: #ffffff;
+    padding: 40px 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    animation: fadeIn 1.5s ease-in-out;
+  }
+  
+  .reviews-heading {
+    font-size: 32px;
+    color: #007BFF;
+    margin-bottom: 20px;
+  }
+  
+  .reviews-container {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  
+  .review-card {
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    width: 300px;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    animation: slideIn 1s ease-in-out;
+  }
+  
+  .review-text p {
+    font-size: 16px;
+    color: #333;
+    font-style: italic;
+    margin-bottom: 10px;
+  }
+  
+  .review-author p {
+    font-size: 18px;
+    font-weight: 600;
+    color: #007BFF;
+    margin-bottom: 5px;
+  }
+  
+  .stars span {
+    color: #FFD700;
+    font-size: 20px;
+  }
+  
+  /* Office Image */
+  .office-image img {
+    max-width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Animations */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes slideIn {
+    from {
+      transform: translateY(50px);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  
+  /* Mobile Responsiveness */
+  @media screen and (max-width: 768px) {
+    .contact-info {
+      flex-direction: column;
+      gap: 20px;
+    }
+  
+    .info-box {
+      width: 100%;
+    }
+  
+    .reviews-container {
+      flex-direction: column;
+      gap: 20px;
+    }
+  }
+  
