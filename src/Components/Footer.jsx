@@ -28,7 +28,7 @@ const Footer = () => {
                 <div className="footer-contact">
                     <h3>Contact Us</h3>
                     <p><strong>Email:</strong> info@mediqempharma.com</p>
-                    <p><strong>Phone:</strong> +91 12345 67890</p>
+                    <p><strong>Phone:</strong> +91 99885 57354</p>
                     <p><strong>Address:</strong> #17, Street No.1, East Chander Nagar, Near Community Center, New Delhi-110051</p>
                 </div>
 
