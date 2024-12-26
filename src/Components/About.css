@@ -1,8 +1,8 @@
 .about-page {
     font-family: 'Arial', sans-serif;
+    background-color: #f4f7fa;
+    color: #333;
     padding: 20px;
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f9;
   }
   
   .about-header {
@@ -10,16 +10,8 @@
     background-color: #0f048b;
     color: #fff;
     padding: 50px 0;
-    margin-top: -5px;
-    border-radius: 12px;
-    box-shadow: 6px 14px 20px rgba(0, 0, 0, 0.3); /* Stronger shadow for visibility */
-    z-index: 1; /* Ensures it is above other content */
+    border-radius: 8px;
   }
-  .about-header:hover{
-    background-color: #16099d;
-  }
-  
-  
   
   .about-header h1 {
     font-size: 3em;
@@ -31,39 +23,43 @@
     margin-top: 10px;
   }
   
-  .company-info, .mission, .vision, .values {
+  /* Layout for content sections */
+  .about-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     margin: 40px 0;
+    flex-wrap: wrap;
   }
   
-  h2 {
-    font-size: 2em;
-    color: #0066cc;
-    margin-bottom: 15px;
-    text-align: center;
+  .content-left, .content-right {
+    flex: 1;
+    padding: 20px;
   }
   
-   .company-info p {
-    font-size: 1.1em;
-    line-height: 1.6;
-    border: 2px  black;
+  .content-left {
+    order: 1;
+  }
+  
+  .content-right {
+    order: 2;
+  }
+  
+  .content-right img {
+    max-width: 100%;
     border-radius: 8px;
-    background-color: #ffffff;
-    box-shadow:  4px 6px rgba(0, 0, 0, 0.1);
-    font-style: italic;
-    font-size: 22px;
-    text-align: center;
   }
   
-  ul {
-    list-style-type: none;
-    padding-left: 0;
+  /* For alternating the layout */
+  .about-content:nth-child(even) .content-left {
+    order: 2;
   }
   
-  ul li {
-    font-size: 1.2em;
-    margin-bottom: 10px;
+  .about-content:nth-child(even) .content-right {
+    order: 1;
   }
   
+  /* Footer */
   .about-footer {
     background-color: #222;
     color: #fff;
@@ -73,49 +69,15 @@
     margin-top: 50px;
   }
   
-  /* New styles for the additional info sections */
-  .additional-info {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
-    margin-top: 40px;
-  }
-  
-  .info-box {
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  }
-  
-  .info-box h3 {
-    font-size: 1.6em;
+  h2 {
+    font-size: 2em;
     color: #0066cc;
     margin-bottom: 15px;
   }
   
-  .info-box ul {
+  p {
     font-size: 1.1em;
     line-height: 1.6;
-  }
-  
-  .social-icons {
-    display: flex;
-    gap: 10px;
-  }
-  
-  .social-icon {
-    text-decoration: none;
-    background-color: #0066cc;
-    color: #fff;
-    padding: 10px;
-    border-radius: 50%;
-    text-align: center;
-    font-size: 1.5em;
-  }
-  
-  .social-icon:hover {
-    background-color: #004d99;
   }
   
   @media screen and (max-width: 768px) {
@@ -135,12 +97,13 @@
       font-size: 1em;
     }
   
-    .additional-info {
-      grid-template-columns: 1fr; /* Stack elements on smaller screens */
+    .about-content {
+      flex-direction: column; /* Stack content on smaller screens */
+      margin: 20px 0;
     }
   
-    .info-box {
-      padding: 15px;
+    .content-left, .content-right {
+      padding: 10px;
     }
   }
   
