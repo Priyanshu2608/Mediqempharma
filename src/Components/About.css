@@ -30,11 +30,13 @@
     align-items: center;
     margin: 40px 0;
     flex-wrap: wrap;
+    text-align: center;
   }
   
   .content-left, .content-right {
     flex: 1;
     padding: 20px;
+
   }
   
   .content-left {
@@ -44,7 +46,10 @@
   .content-right {
     order: 2;
   }
-  
+  .content-left p{
+    font-style: italic;
+    font-weight: 500;
+  }
   .content-right img {
     max-width: 100%;
     border-radius: 8px;
