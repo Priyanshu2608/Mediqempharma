@@ -1,37 +1,216 @@
-body, html {
-    margin: 0;
-    padding: 0;
-    height: 100%;
-    
-    scroll-behavior: smooth; 
-  } 
-  .product-container {
-    position: relative;
-    width: 100%;
-    height: 100vh; 
-    background: url("../assets/product1.jpg") no-repeat center center/cover; 
-    display: flex;
-    justify-content: center;
+/* General Styles */
+.product-container {
+  padding: 40px;
+  background-color: #f8f8f8;
+  font-family: 'Arial', sans-serif;
+}
+
+.product-content {
+  text-align: center;
+}
+
+.product-title {
+  font-size: 2.5rem;
+  color: #005a8d;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.product-subtitle {
+  font-size: 1.2rem;
+  color: #666;
+  margin-bottom: 30px;
+  font-style: italic;
+}
+
+.know-more-btn {
+  padding: 12px 24px;
+  background-color: #005a8d;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+}
+
+.know-more-btn:hover {
+  background-color: #003f66;
+}
+
+/* Product Showcase */
+.product-showcase {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-top: 40px;
+}
+
+.product-card {
+  width: 300px;
+  background-color: white;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  margin-bottom: 30px;
+  text-align: center;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+}
+
+.product-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+.product-name {
+  font-size: 1.8rem;
+  color: #005a8d;
+  margin-bottom: 15px;
+  font-weight: bold;
+}
+
+.product-short-desc {
+  font-size: 1.1rem;
+  color: #666;
+  line-height: 1.5;
+  font-weight: 300;
+}
+
+/* Modal for Product Details */
+.product-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal-content {
+  background-color: white;
+  padding: 40px;
+  border-radius: 12px;
+  width: 80%;
+  max-width: 900px;
+  text-align: center;
+  overflow-y: auto;
+}
+
+.modal-title {
+  font-size: 2rem;
+  color: #005a8d;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+.modal-desc {
+  font-size: 1.1rem;
+  color: #666;
+  margin-bottom: 20px;
+  font-weight: 300;
+}
+
+/* Slick Carousel Styles */
+.product-image-slider .slick-slide {
+  display: flex;
+  justify-content: center;
+}
+
+.product-image-large {
+  width: 100%;
+  max-width: 600px; /* Set max width for larger images */
+  height: auto;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+.slick-prev, .slick-next {
+  font-size: 30px;
+  color: #005a8d;
+}
+
+.slick-prev:hover, .slick-next:hover {
+  color: #003f66;
+}
+
+/* Product Details List */
+.product-details {
+  list-style: none;
+  padding: 0;
+  margin-top: 20px;
+  font-size: 1.2rem;
+  color: #333;
+}
+
+.product-details li {
+  margin-bottom: 10px;
+}
+
+.product-details strong {
+  color: #005a8d;
+  font-weight: bold;
+}
+
+/* Close Button */
+.close-btn {
+  padding: 12px 24px;
+  background-color: #005a8d;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+.close-btn:hover {
+  background-color: #003f66;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .product-showcase {
+    flex-direction: column;
     align-items: center;
-    border-bottom: 2px solid black; 
   }
-  .product-content {
-    position: absolute;
-    top: 40%;
-    left: 70%;
-    transform: translate(-30%, -50%);
-    text-align: center;
-    color: white;
-    text-shadow: 0 3px 4px rgba(0, 0, 0, 0.6);
+
+  .product-card {
+    width: 80%;
   }
+}
+
+@media (max-width: 768px) {
   .product-title {
-    font-size: 3.9rem;
-    font-family: "Poppins", sans-serif;
-    margin: 0;
+    font-size: 2rem;
   }
+
   .product-subtitle {
-    font-size: 1.8rem;
-    font-family: "Open Sans", sans-serif;
-    margin-top: 0.6rem;
-    font-style: italic;
+    font-size: 1rem;
   }
+
+  .product-card {
+    width: 100%;
+  }
+
+  .modal-content {
+    width: 90%;
+    padding: 20px;
+  }
+}
