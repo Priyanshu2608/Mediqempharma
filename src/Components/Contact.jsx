@@ -15,7 +15,7 @@ const Contact = () => {
               <div className="info-icon">📞</div>
               <div className="info-text">
                 <h3>Phone Number</h3>
-                <p className="info-detail">9872854883</p>
+                <p className="info-detail">+91 9988557354</p>
               </div>
             </div>
             <div className="info-box">
@@ -29,23 +29,12 @@ const Contact = () => {
               <div className="info-icon">📍</div>
               <div className="info-text">
                 <h3>Office Address</h3>
-                <p className="info-detail">123 Pharma Street, Health City, 456789</p>
+                <p className="info-detail">#17, Street No.1, East Chander Nagar, Near Community Center, New Delhi-110051</p>
               </div>
             </div>
           </div>
 
-          {/* Social Media Section */}
-          <div className="social-media-icons">
-            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
-              <i className="fab fa-linkedin"></i>
-            </a>
-            <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">
-              <i className="fab fa-twitter"></i>
-            </a>
-            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
-              <i className="fab fa-instagram"></i>
-            </a>
-          </div>
+          
 
           {/* Map Section */}
           <div className="map-container">

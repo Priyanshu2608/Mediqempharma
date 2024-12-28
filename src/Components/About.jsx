@@ -77,7 +77,7 @@ function About() {
         </section>
       </div>
       <Footer />
-      ``
+      
     </>
   );
 }
