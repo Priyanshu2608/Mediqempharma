@@ -8,6 +8,7 @@ import Dye from "../../assets/dyefill.png";
 import Weight from "../../assets/weight.jpg";
 import Compact from "../../assets/compact.png";
 import eject from "../../assets/eject.png";
+import Pform from "./Productform";
 const products = [
   {
     id: 1,
@@ -288,6 +289,7 @@ const Productpage1 = () => {
           />
         </div>
       </div>
+      <Pform/>
     </>
   );
 };
