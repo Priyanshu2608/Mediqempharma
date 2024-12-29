@@ -218,12 +218,7 @@ body {
 }
 
 /* Responsive Design */
-@media (max-width: 1024px) {
-  .features-grid, .photo-grid {
-    gap: 1rem;
-  }
-}
-
+/* Responsive Design */
 @media (max-width: 768px) {
   .features-grid {
     flex-direction: column;
@@ -235,7 +230,15 @@ body {
   }
 
   .product-grid {
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    display: flex;
+    flex-direction: column; /* Stack products vertically */
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .product-card {
+    width: 100%; /* Full width for mobile */
+    max-width: 350px; /* Optional: Limit maximum width for better visuals */
   }
 }
 
@@ -256,3 +259,4 @@ body {
     padding: 1rem;
   }
 }
+
