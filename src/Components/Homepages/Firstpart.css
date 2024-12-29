@@ -244,4 +244,7 @@
   .image-container .image-des {
     font-size: 1rem;
   }
+  .image-des{
+    font-size: 10px;
+  }
 }
