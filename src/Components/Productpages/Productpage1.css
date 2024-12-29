@@ -5,7 +5,7 @@ body {
   padding: 0;
   background-color: #f9f9f9;
   color: #333;
-  box-sizing: border-box; /* Ensures padding and margin don't affect width calculation */
+  box-sizing: border-box;
 }
 
 /* Products Header and Subheading */
@@ -29,8 +29,8 @@ body {
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: 1.5rem;
   padding: 1rem 2rem;
-  justify-items: center; /* Ensure the items are centered in each column */
-  max-width: 100%; /* Ensure the grid doesn't overflow on small screens */
+  justify-items: center;
+  max-width: 100%;
   box-sizing: border-box;
 }
 
@@ -43,8 +43,8 @@ body {
   padding: 1rem;
   transition: transform 0.3s, box-shadow 0.3s;
   width: 100%;
-  max-width: 300px; /* Ensure cards don't get too large on mobile */
-  margin: 0 auto; /* Center cards within their containers */
+  max-width: 300px;
+  margin: 0 auto;
 }
 
 .product-card:hover {
@@ -87,9 +87,9 @@ body {
   width: 90%;
   position: relative;
   box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
-  text-align: center; /* Ensure modal text is centered */
+  text-align: center;
   max-height: 80vh;
-  overflow-y: auto; /* Add scrollbar for excessive content */
+  overflow-y: auto;
 }
 
 .close-btn {
@@ -158,12 +158,12 @@ body {
 
 .features-grid {
   display: flex;
-  justify-content: center; /* Center the feature cards */
+  justify-content: center;
   align-items: center;
   flex-wrap: wrap;
   gap: 1rem;
   margin: 0 auto;
-  max-width: 100%; /* Ensure grid fits within screen */
+  max-width: 100%;
 }
 
 .feature-card {
@@ -235,34 +235,32 @@ body {
 }
 
 /* Responsive Design */
-@media (max-width: 1024px) {
-  .features-grid, .photo-grid {
-    gap: 1rem;
+@media (max-width: 1280px) {
+  .products-head {
+    font-size: 2.2rem;
+  }
+
+  .products-subhead {
+    font-size: 1rem;
   }
 
   .product-grid {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
     padding: 1rem;
   }
 
   .product-card {
-    width: 100%;
-    max-width: 300px;
-    margin: 0 auto;
+    max-width: 280px;
+  }
+
+  .modal-content {
+    max-width: 750px;
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
   .features-grid {
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    margin: 0 auto;
-    gap: 1rem;
+    gap: 1.5rem;
   }
 
   .feature-card {
@@ -271,52 +269,90 @@ body {
   }
 
   .photo-grid {
-    grid-template-columns: 1fr;
-    gap: 1rem;
-    justify-content: center;
-    margin: 0 auto;
-    padding: 0 1rem;
-  }
-
-  .photo-grid img {
-    margin: 0 auto;
-  }
-
-  .product-grid {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 1rem;
-    margin: 0 auto;
-  }
-
-  .product-card {
-    width: 100%;
-    max-width: 300px;
-    margin: 0 auto;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   }
 
   .modal-content {
-    margin: 0 auto;
+    max-width: 700px;
+    padding: 1.5rem;
+  }
+
+  .product-grid {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  }
+}
+
+@media (max-width: 768px) {
+  .products-head {
+    font-size: 2rem;
+  }
+
+  .product-card {
+    max-width: 90%;
+  }
+
+  .modal-content {
+    max-width: 650px;
     padding: 1rem;
-    text-align: center;
+  }
+
+  .photo-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .feature-card {
+    width: 100%;
+    max-width: 320px;
+  }
+
+  .product-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .feature-icon {
+    width: 70px;
+    height: 70px;
   }
 }
 
 @media (max-width: 480px) {
   .products-head {
-    font-size: 2rem;
+    font-size: 1.8rem;
   }
 
   .products-subhead {
     font-size: 1rem;
   }
 
-  .feature-card, .product-card {
-    width: 100%;
+  .product-grid {
+    grid-template-columns: 1fr;
+    padding: 1rem;
+  }
+
+  .product-card {
+    max-width: 100%;
   }
 
   .modal-content {
+    max-width: 90%;
     padding: 1rem;
+  }
+
+  .modal-product-name {
+    font-size: 1.5rem;
+  }
+
+  .feature-card {
+    width: 100%;
+    max-width: 280px;
+  }
+
+  .photo-grid img {
+    height: 150px;
+    object-fit: cover;
+  }
+
+  .why-choose-us h2 {
+    font-size: 1.6rem;
   }
 }
