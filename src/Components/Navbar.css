@@ -104,11 +104,11 @@ body, ul, li {
   }
   
   .navbar-links {
-    gap: 2.5rem;
+    gap: 2.7rem;
   }
 
   .navbar-title {
-    font-size: 1.4rem;
+    font-size: 1.5rem;
   }
 }
 

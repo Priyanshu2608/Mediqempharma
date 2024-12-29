@@ -42,6 +42,7 @@ body {
   color: white;
   z-index: 2;
   animation: fadeInUp 1s ease-out;
+  padding: 0 1rem; /* Padding for content responsiveness */
 }
 
 .product-title {
@@ -50,8 +51,9 @@ body {
   margin-bottom: 20px;
   text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
   animation: fadeIn 1s ease;
-  margin-left: 800px ;
-  margin-bottom: 530px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 2rem; /* Adjust for better spacing */
 }
 
 .product-subtitle {
@@ -60,8 +62,9 @@ body {
   margin-bottom: 30px;
   text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
   animation: fadeIn 1.2s ease;
-  margin-left: 800px;
-  margin-top: -500px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: -10px; /* Adjust for better alignment */
 }
 
 .know-more-btn {
@@ -77,7 +80,9 @@ body {
   text-decoration: none;
   transition: background-color 0.3s ease, transform 0.3s ease;
   animation: fadeIn 1.4s ease;
-  margin-left: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  display: inline-block; /* Ensures button centers properly */
 }
 
 .know-more-btn:hover {
@@ -114,7 +119,26 @@ body {
 }
 
 /* Responsive Design */
+@media (max-width: 1024px) {
+  .product-title {
+    font-size: 3rem;
+  }
+
+  .product-subtitle {
+    font-size: 1.3rem;
+  }
+
+  .know-more-btn {
+    font-size: 1.1rem;
+    padding: 10px 20px;
+  }
+}
+
 @media (max-width: 768px) {
+  .overlay-content {
+    padding: 0 2rem; /* Increase padding for mobile devices */
+  }
+
   .product-title {
     font-size: 2.5rem;
   }
@@ -125,6 +149,22 @@ body {
 
   .know-more-btn {
     font-size: 1rem;
-    padding: 10px 20px;
+    padding: 8px 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .product-title {
+    font-size: 2rem;
+  }
+
+  .product-subtitle {
+    font-size: 1rem;
+    margin-bottom: 20px;
+  }
+
+  .know-more-btn {
+    font-size: 0.9rem;
+    padding: 6px 12px;
   }
 }

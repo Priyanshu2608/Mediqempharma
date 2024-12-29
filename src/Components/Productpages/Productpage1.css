@@ -149,6 +149,7 @@ body {
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
+  gap: 1rem;
 }
 
 .feature-card {
@@ -217,9 +218,41 @@ body {
 }
 
 /* Responsive Design */
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
   .features-grid, .photo-grid {
-    flex-direction: column;
     gap: 1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .features-grid {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .photo-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .product-grid {
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  }
+}
+
+@media (max-width: 480px) {
+  .products-head {
+    font-size: 2rem;
+  }
+
+  .products-subhead {
+    font-size: 1rem;
+  }
+
+  .feature-card, .product-card {
+    width: 100%;
+  }
+
+  .modal-content {
+    padding: 1rem;
   }
 }
