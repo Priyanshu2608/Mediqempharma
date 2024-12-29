@@ -33,10 +33,6 @@ const Contact = () => {
               </div>
             </div>
           </div>
-
-          
-
-          {/* Map Section */}
           <div className="map-container">
             <iframe
               title="Google Maps"
@@ -48,8 +44,6 @@ const Contact = () => {
               loading="lazy"
             ></iframe>
           </div>
-
-          {/* Reviews Section */}
           <div className="reviews-section">
             <h2 className="reviews-heading">What Our Clients Say</h2>
             <div className="reviews-container">

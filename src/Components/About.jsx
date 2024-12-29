@@ -1,5 +1,5 @@
 import React from "react";
-import "./About.css"; // Ensure the CSS is updated accordingly
+import "./About.css"; 
 import Footer from "./Footer";
 import who from "../assets/who-we-are-banner.jpg";
 import our from "../assets/our.png";

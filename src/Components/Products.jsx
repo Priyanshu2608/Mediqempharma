@@ -2,12 +2,12 @@ import React, { useRef, useState } from "react";
 import "./Product.css";
 import Footer from "./Footer.jsx";
 import { motion } from "framer-motion";
-import Slider from "react-slick"; // Import react-slick
+import Slider from "react-slick"; 
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
 
-// Product images (Add more as needed)
+
 import moxiImage1 from "../assets/MOXIQEM.png";
 import moxiImage2 from "../assets/MOXIQEM.png";
 import moxiImage3 from "../assets/MOXIQEM.png";
@@ -26,7 +26,7 @@ const Products = () => {
     {
       id: 1,
       name: "MOXIQEM-CV 625",
-      images: [moxiImage1, moxiImage2, moxiImage3], // Multiple images for the slider
+      images: [moxiImage1, moxiImage2, moxiImage3], 
       description: "High-quality product for health and well-being.",
       details: {
         composition: "Active Ingredient A, B, C",
@@ -38,7 +38,7 @@ const Products = () => {
     },
     {
       id: 2,
-      name: "Product B",
+      name: "MOXIQEM-DDS SYRUP",
       image: "https://via.placeholder.com/200",
       description: "Effective solution for your health needs.",
       details: {
@@ -64,7 +64,7 @@ const Products = () => {
     },
   ];
 
-  // Slick Slider settings for the image carousel
+ 
   const sliderSettings = {
     dots: true,
     infinite: true,
@@ -88,8 +88,6 @@ const Products = () => {
           </button>
         </div>
       </div>
-
-      {/* Product Showcase Section */}
       <div className="product-showcase" ref={nextSectionRef}>
         {products.map((product) => (
           <div
@@ -103,8 +101,6 @@ const Products = () => {
           </div>
         ))}
       </div>
-
-      {/* Modal for Product Details */}
       {selectedProduct && (
         <motion.div
           className="product-modal"
@@ -124,8 +120,6 @@ const Products = () => {
                 </div>
               ))}
             </Slider>
-
-            {/* Product Details */}
             <ul className="product-details">
               <li><strong>Composition:</strong> {selectedProduct.details.composition}</li>
               <li><strong>Dosage:</strong> {selectedProduct.details.dosage}</li>

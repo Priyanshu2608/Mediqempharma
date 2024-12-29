@@ -1,4 +1,4 @@
-/* Footer Container */
+
 .footer {
     background-color: #005a8d;
     color: #ffffff;
@@ -15,7 +15,7 @@
     margin: 0 auto;
 }
 
-/* Footer Logo */
+
 .footer-logo h1 {
     font-size: 2rem;
     font-weight: bold;
@@ -29,7 +29,7 @@
     color: #cce7f3;
 }
 
-/* Footer Links */
+
 .footer-links h3,
 .footer-contact h3,
 .footer-social h3 {
@@ -58,20 +58,20 @@
     color: #ffffff;
 }
 
-/* Footer Contact */
+
 .footer-contact {
-    flex-basis: 30%; /* Ensure consistent width */
+    flex-basis: 30%; 
     max-width: 30%;
-    word-wrap: break-word; /* Ensure long text wraps */
+    word-wrap: break-word; 
 }
 
 .footer-contact p {
     margin: 5px 0;
     font-size: 1rem;
-    line-height: 1.6; /* Add spacing for better readability */
+    line-height: 1.6; 
 }
 
-/* Social Media Icons */
+
 .footer-social .social-icons {
     display: flex;
     gap: 15px;
@@ -87,7 +87,7 @@
     color: #ffffff;
 }
 
-/* Footer Bottom */
+
 .footer-bottom {
     text-align: center;
     margin-top: 20px;
@@ -99,13 +99,13 @@
     margin: 0;
 }
 .footer-logo-image {
-    width: 120px; /* Adjust the size of the logo */
+    width: 120px; 
     height: auto;
-    margin-bottom: 10px; /* Adds spacing between logo and text */
+    margin-bottom: 10px; 
     display: block;
 }
 
-/* Responsive Design */
+
 @media (max-width: 768px) {
     .footer-container {
         flex-direction: column;
@@ -120,7 +120,7 @@
     }
 
     .footer-contact {
-        flex-basis: 100%; /* Adjust to full width on small screens */
+        flex-basis: 100%; 
         max-width: 100%;
     }
 }

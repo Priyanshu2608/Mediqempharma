@@ -1,19 +1,19 @@
 import React from "react";
 import "./Footer.css";
-import Logo from "../assets/Medilogo.png"; // Correct path to your logo
+import Logo from "../assets/Medilogo.png"; 
 
 const Footer = () => {
     return (
         <footer className="footer">
             <div className="footer-container">
-                {/* Footer Logo */}
+                
                 <div className="footer-logo">
                     <img src={Logo} alt="MediqemPharma Logo" className="footer-logo-image" />
                     <h1>MediqemPharma</h1>
                     <p>Committed to Quality</p>
                 </div>
 
-                {/* Quick Links */}
+                
                 <div className="footer-links">
                     <h3>Quick Links</h3>
                     <ul>
@@ -24,7 +24,7 @@ const Footer = () => {
                     </ul>
                 </div>
 
-                {/* Contact Information */}
+               
                 <div className="footer-contact">
                     <h3>Contact Us</h3>
                     <p><strong>Email:</strong> info@mediqempharma.com</p>
@@ -32,7 +32,7 @@ const Footer = () => {
                     <p><strong>Address:</strong> #17, Street No.1, East Chander Nagar, Near Community Center, New Delhi-110051</p>
                 </div>
 
-                {/* Social Media Icons */}
+                
                 <div className="footer-social">
                     <h3>Follow Us</h3>
                     <div className="social-icons">
@@ -52,7 +52,7 @@ const Footer = () => {
                 </div>
             </div>
 
-            {/* Footer Bottom */}
+            
             <div className="footer-bottom">
                 <p>&copy; {new Date().getFullYear()} MediqemPharma. All rights reserved.</p>
             </div>

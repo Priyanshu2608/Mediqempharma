@@ -23,7 +23,7 @@
     margin-top: 10px;
   }
   
-  /* Layout for content sections */
+  
   .about-content {
     display: flex;
     justify-content: space-between;
@@ -55,7 +55,6 @@
     border-radius: 8px;
   }
   
-  /* For alternating the layout */
   .about-content:nth-child(even) .content-left {
     order: 2;
   }
@@ -64,7 +63,7 @@
     order: 1;
   }
   
-  /* Footer */
+ 
   .about-footer {
     background-color: #222;
     color: #fff;
@@ -103,7 +102,7 @@
     }
   
     .about-content {
-      flex-direction: column; /* Stack content on smaller screens */
+      flex-direction: column; 
       margin: 20px 0;
     }
   

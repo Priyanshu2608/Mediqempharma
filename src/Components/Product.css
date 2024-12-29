@@ -1,4 +1,4 @@
-/* General Styles */
+
 .product-container {
   padding: 40px;
   background-color: #f8f8f8;
@@ -40,7 +40,7 @@
   background-color: #003f66;
 }
 
-/* Product Showcase */
+
 .product-showcase {
   display: flex;
   flex-wrap: wrap;
@@ -87,7 +87,7 @@
   font-weight: 300;
 }
 
-/* Modal for Product Details */
+
 .product-modal {
   position: fixed;
   top: 0;
@@ -125,7 +125,7 @@
   font-weight: 300;
 }
 
-/* Slick Carousel Styles */
+
 .product-image-slider .slick-slide {
   display: flex;
   justify-content: center;
@@ -133,7 +133,7 @@
 
 .product-image-large {
   width: 100%;
-  max-width: 600px; /* Set max width for larger images */
+  max-width: 600px; 
   height: auto;
   object-fit: cover;
   border-radius: 8px;
@@ -149,7 +149,7 @@
   color: #003f66;
 }
 
-/* Product Details List */
+
 .product-details {
   list-style: none;
   padding: 0;
@@ -167,7 +167,7 @@
   font-weight: bold;
 }
 
-/* Close Button */
+
 .close-btn {
   padding: 12px 24px;
   background-color: #005a8d;
@@ -184,7 +184,7 @@
   background-color: #003f66;
 }
 
-/* Responsive Design */
+
 @media (max-width: 1024px) {
   .product-showcase {
     flex-direction: column;
