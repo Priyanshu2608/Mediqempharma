@@ -75,11 +75,11 @@ body, html {
 /* Responsive Design */
 @media (max-width: 1024px) {
   .home-title {
-    font-size: 1.8rem;
+    font-size: 2rem;
   }
 
   .home-subtitle {
-    font-size: 1.5rem;
+    font-size: 1.7rem;
   }
 
   .know-more-home {
@@ -109,19 +109,21 @@ body, html {
 
 @media (max-width: 480px) {
   .home-title {
-    font-size: 1.3rem;
-    margin-left: 40px;
+    font-size: 1.7rem;
+    text-align: center;
+    margin-left:90px ;
   }
 
   .home-subtitle {
-    font-size: 1rem;
-    margin-left:40px;
+    font-size: 1.1rem;
+    margin-left:90px;
+    text-align: center;
   }
 
   .know-more-home {
     font-size: 0.9rem;
     padding: 8px 15px;
-    margin-left: 40px ;
+    margin-left: 90px ;
   }
 
   .home-content {
