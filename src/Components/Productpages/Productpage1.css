@@ -5,6 +5,7 @@ body {
   padding: 0;
   background-color: #f9f9f9;
   color: #333;
+  box-sizing: border-box; /* Ensures padding and margin don't affect width calculation */
 }
 
 /* Products Header and Subheading */
@@ -29,6 +30,8 @@ body {
   gap: 1.5rem;
   padding: 1rem 2rem;
   justify-items: center; /* Ensure the items are centered in each column */
+  max-width: 100%; /* Ensure the grid doesn't overflow on small screens */
+  box-sizing: border-box;
 }
 
 .product-card {
@@ -39,6 +42,9 @@ body {
   cursor: pointer;
   padding: 1rem;
   transition: transform 0.3s, box-shadow 0.3s;
+  width: 100%;
+  max-width: 300px; /* Ensure cards don't get too large on mobile */
+  margin: 0 auto; /* Center cards within their containers */
 }
 
 .product-card:hover {
@@ -150,12 +156,12 @@ body {
 
 .features-grid {
   display: flex;
-  justify-content: center; /* Ensure the feature cards are centered */
-  align-items: center; /* Center the items vertically */
+  justify-content: center; /* Center the feature cards */
+  align-items: center;
   flex-wrap: wrap;
   gap: 1rem;
   margin: 0 auto;
-  max-width: 100%; /* Ensure the grid fits on smaller screens */
+  max-width: 100%; /* Ensure grid fits within screen */
 }
 
 .feature-card {
@@ -209,7 +215,7 @@ body {
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 1rem;
   padding: 1rem;
-  justify-content: center; /* Ensure photo grid is centered */
+  justify-content: center;
   margin: 0 auto;
 }
 
@@ -232,7 +238,6 @@ body {
     gap: 1rem;
   }
 
-  /* Center and stack items for mobile */
   .product-grid {
     display: flex;
     flex-direction: column;
@@ -243,13 +248,12 @@ body {
 
   .product-card {
     width: 100%;
-    max-width: 350px;
+    max-width: 300px;
     margin: 0 auto;
   }
 }
 
 @media (max-width: 768px) {
-  /* Ensure all content is centered */
   .features-grid {
     flex-direction: column;
     align-items: center;
@@ -261,10 +265,9 @@ body {
 
   .feature-card {
     width: 100%;
-    max-width: 350px;
+    max-width: 300px;
   }
 
-  /* Center the photo grid */
   .photo-grid {
     grid-template-columns: 1fr;
     gap: 1rem;
@@ -287,7 +290,7 @@ body {
 
   .product-card {
     width: 100%;
-    max-width: 350px;
+    max-width: 300px;
     margin: 0 auto;
   }
 
