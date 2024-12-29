@@ -28,6 +28,7 @@ body {
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: 1.5rem;
   padding: 1rem 2rem;
+  justify-items: center; /* Ensure the items are centered in each column */
 }
 
 .product-card {
@@ -80,6 +81,7 @@ body {
   width: 90%;
   position: relative;
   box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
+  text-align: center; /* Ensure modal text is centered */
 }
 
 .close-btn {
@@ -137,6 +139,7 @@ body {
   background-color: #ecf0f1;
   padding: 2rem;
   text-align: center;
+  margin: 0 auto;
 }
 
 .why-choose-us h2 {
@@ -145,56 +148,170 @@ body {
   margin-bottom: 1.5rem;
 }
 
-@media (max-width: 768px) {
-  /* Center the features grid */
-  @media (max-width: 768px) {
-    .features-grid {
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      text-align: center;
-      margin: 0 auto;
-      gap: 1rem;
-    }
-  
-    .feature-card {
-      width: 100%;
-      max-width: 350px;
-    }
-  
-    .photo-grid {
-      grid-template-columns: 1fr;
-      gap: 1rem;
-      justify-content: center;
-      margin: 0 auto;
-      padding: 0 1rem;
-    }
-  
-    .photo-grid img {
-      margin: 0 auto;
-    }
-  
-    .product-grid {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      gap: 1rem;
-      margin: 0 auto;
-    }
-  
-    .product-card {
-      width: 100%;
-      max-width: 350px;
-      margin: 0 auto;
-    }
-  
-    .modal-content {
-      margin: 0 auto;
-      padding: 1rem;
-      text-align: center;
-    }
+.features-grid {
+  display: flex;
+  justify-content: center; /* Ensure the feature cards are centered */
+  align-items: center; /* Center the items vertically */
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin: 0 auto;
+  max-width: 100%; /* Ensure the grid fits on smaller screens */
+}
+
+.feature-card {
+  background-color: #ffffff;
+  border: 1px solid #e1e1e1;
+  border-radius: 10px;
+  text-align: center;
+  padding: 1rem;
+  width: 250px;
+  margin: 1rem;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.feature-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.feature-icon {
+  width: 80px;
+  height: 80px;
+  margin-bottom: 1rem;
+}
+
+.feature-card h3 {
+  font-size: 1.3rem;
+  color: #34495e;
+}
+
+.feature-card p {
+  font-size: 1rem;
+  color: #7f8c8d;
+}
+
+/* Photography Showcase Section */
+.photography-showcase {
+  background-color: #ffffff;
+  padding: 2rem;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.photography-showcase h2 {
+  font-size: 2rem;
+  color: #2c3e50;
+  margin-bottom: 1.5rem;
+}
+
+.photo-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1rem;
+  padding: 1rem;
+  justify-content: center; /* Ensure photo grid is centered */
+  margin: 0 auto;
+}
+
+.photo-grid img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  object-fit: cover;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+}
+
+.photo-grid img:hover {
+  transform: scale(1.05);
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .features-grid, .photo-grid {
+    gap: 1rem;
+  }
+
+  /* Center and stack items for mobile */
+  .product-grid {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem;
+  }
+
+  .product-card {
+    width: 100%;
+    max-width: 350px;
+    margin: 0 auto;
   }
 }
-  
 
+@media (max-width: 768px) {
+  /* Ensure all content is centered */
+  .features-grid {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 0 auto;
+    gap: 1rem;
+  }
 
+  .feature-card {
+    width: 100%;
+    max-width: 350px;
+  }
+
+  /* Center the photo grid */
+  .photo-grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    justify-content: center;
+    margin: 0 auto;
+    padding: 0 1rem;
+  }
+
+  .photo-grid img {
+    margin: 0 auto;
+  }
+
+  .product-grid {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    margin: 0 auto;
+  }
+
+  .product-card {
+    width: 100%;
+    max-width: 350px;
+    margin: 0 auto;
+  }
+
+  .modal-content {
+    margin: 0 auto;
+    padding: 1rem;
+    text-align: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .products-head {
+    font-size: 2rem;
+  }
+
+  .products-subhead {
+    font-size: 1rem;
+  }
+
+  .feature-card, .product-card {
+    width: 100%;
+  }
+
+  .modal-content {
+    padding: 1rem;
+  }
+}
