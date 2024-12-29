@@ -106,7 +106,7 @@
 
 .image-container .image-text {
   position: absolute;
-  top: 39%; /* Adjusted to match your original placement */
+  top: 39%;
   left: 50%;
   transform: translate(-50%, -50%);
   color: white;
@@ -119,7 +119,7 @@
 
 .image-container .image-des {
   position: absolute;
-  top: 62%; /* Adjusted to match your original placement */
+  top: 62%;
   left: 50%;
   transform: translate(-50%, -50%);
   color: white;
@@ -144,32 +144,104 @@
   text-align: center;
   text-decoration: none;
   margin-top: -50px;
- transform: translate(-0%,-240%);
+  transform: translate(-0%, -240%);
   transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
 .view-products-btn:hover {
   background-color: #003f66;
-  
 }
 
 /* Responsive Design */
+
+/* Tablets (landscape and portrait) */
 @media (max-width: 1024px) {
   .cards {
-      grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(2, 1fr); /* 2 cards per row */
+    gap: 20px;
   }
-}
 
-@media (max-width: 768px) {
-  .cards {
-      grid-template-columns: 1fr;
+  .container {
+    padding: 20px;
   }
 
   .image-container .image-text {
-      font-size: 1.8rem;
+    font-size: 1.8rem;
   }
 
   .image-container .image-des {
-      font-size: 1.2rem;
+    font-size: 1.4rem;
+  }
+}
+
+/* Small Tablets & Large Smartphones */
+@media (max-width: 768px) {
+  .cards {
+    grid-template-columns: 1fr; /* Single column */
+  }
+
+  .image-container .image-text {
+    font-size: 1.6rem;
+  }
+
+  .image-container .image-des {
+    font-size: 1.2rem;
+  }
+}
+
+/* Smartphones (e.g., iPhone 12, Samsung Galaxy S20 Ultra) */
+@media (max-width: 576px) {
+  .container {
+    padding: 10px;
+  }
+
+  .box h2 {
+    font-size: 2rem;
+  }
+
+  .box h4 {
+    font-size: 1rem;
+  }
+
+  .card h3 {
+    font-size: 1.4rem;
+  }
+
+  .card p {
+    font-size: 1rem;
+  }
+
+  .view-products-btn {
+    font-size: 1rem;
+    padding: 10px 20px;
+  }
+}
+
+/* Very Small Devices (e.g., iPhone SE, smaller screens) */
+@media (max-width: 360px) {
+  .box h2 {
+    font-size: 1.8rem;
+  }
+
+  .box h4 {
+    font-size: 0.9rem;
+  }
+
+  .card img {
+    width: 100px;
+    height: 100px;
+  }
+
+  .view-products-btn {
+    font-size: 0.9rem;
+    padding: 8px 16px;
+  }
+
+  .image-container .image-text {
+    font-size: 1.4rem;
+  }
+
+  .image-container .image-des {
+    font-size: 1rem;
   }
 }

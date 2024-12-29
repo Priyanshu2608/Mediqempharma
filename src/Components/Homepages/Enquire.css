@@ -1,58 +1,134 @@
-.contact{
+.contact {
     display: flex;
     justify-content: center;
     align-items: center;
     min-height: 80vh;
-    
+    padding: 20px; /* Added padding for smaller devices */
 }
-form{
+
+form {
     max-width: 600px;
     width: 100%;
     background: rgb(255, 255, 255);
-    backdrop-filter: blur(px);
-    padding: 25px 200px 35px;
+    backdrop-filter: blur(5px); /* Fixed missing blur value */
+    padding: 25px;
     border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     color: rgb(0, 0, 0);
     margin: 25px;
 }
-form h2{
-    font-size: 30px;
+
+form h2 {
+    font-size: 28px; /* Slightly reduced for better scaling */
     text-align: center;
 }
-form .input-box{
-    margin-top: 30px;
+
+form .input-box {
+    margin-top: 20px;
 }
-.input-form .field{
+
+.input-form .field {
     width: 100%;
     height: 50px;
     background: transparent;
-    border: 2px solid #ddd; 
+    border: 2px solid #ddd;
     outline: none;
     border-radius: 6px;
     padding: 15px;
     font-size: 16px;
     color: rgb(0, 0, 0);
     margin-top: 10px;
-    font-weight: 700;
+    font-weight: 500; /* Slightly reduced for a cleaner look */
 }
-.input-form .field.mess{
-    height: 200px;
+
+.input-form .field.mess {
+    height: 150px; /* Reduced height for smaller screens */
     resize: none;
 }
-form button{
+
+form button {
     width: 100%;
     height: 55px;
     border: none;
     border-radius: 6px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     cursor: pointer;
     font-size: 16px;
     background: #051f94;
     color: white;
     font-weight: 500;
     margin-top: 25px;
+    transition: background-color 0.3s ease;
 }
-form button:hover{
+
+form button:hover {
     background-color: #1b4ae2;
+}
+
+/* Responsive Design */
+
+/* Tablets (landscape and portrait) */
+@media (max-width: 1024px) {
+    form {
+        padding: 25px 40px; /* Reduced padding for tablets */
+    }
+    
+    form h2 {
+        font-size: 26px;
+    }
+
+    .input-form .field {
+        font-size: 14px;
+    }
+}
+
+/* Smartphones (e.g., iPhone 12, Samsung Galaxy S20 Ultra) */
+@media (max-width: 768px) {
+    form {
+        padding: 20px; /* Simplified padding for smaller devices */
+    }
+
+    form h2 {
+        font-size: 24px;
+    }
+
+    .input-form .field {
+        font-size: 14px;
+        height: 45px; /* Slightly reduced height for input fields */
+    }
+
+    .input-form .field.mess {
+        height: 120px; /* Further reduced height for message box */
+    }
+
+    form button {
+        height: 50px;
+        font-size: 15px;
+    }
+}
+
+/* Very Small Devices (e.g., iPhone SE, small screens) */
+@media (max-width: 480px) {
+    form {
+        margin: 15px; /* Adjusted margin */
+        padding: 15px;
+    }
+
+    form h2 {
+        font-size: 22px;
+    }
+
+    .input-form .field {
+        font-size: 14px;
+        padding: 10px;
+    }
+
+    .input-form .field.mess {
+        height: 100px;
+    }
+
+    form button {
+        height: 45px;
+        font-size: 14px;
+    }
 }

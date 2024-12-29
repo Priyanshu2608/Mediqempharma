@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import "./Productpage1.css";
 import { motion } from "framer-motion";
-
 const products = [
   {
     id: 1,
@@ -99,7 +98,6 @@ const products = [
     },
   },
 ];
-
 const Productpage1 = () => {
   const [selectedProduct, setSelectedProduct] = useState(null);
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
@@ -118,33 +116,15 @@ const Productpage1 = () => {
 
   return (
     <>
-      <h2 className="products-head"> Our Products </h2>
+      {/* Existing Header and Subheading */}
+      <h2 className="products-head">Our Products</h2>
       <p className="products-subhead">
         At MediqemPharma, we are committed to providing world-class
-        pharmaceutical products that play a vital role in improving the health
-        and well-being of individuals across the globe. Our goal is to combine
-        cutting-edge scientific research with the highest standards of
-        manufacturing to create pharmaceutical solutions that are both effective
-        and safe. Each product in our portfolio has been carefully developed to
-        address the unique needs of patients, ensuring the delivery of quality
-        care at every step. We understand the importance of trust and
-        reliability in healthcare. Our products are backed by years of research,
-        clinical testing, and a deep understanding of medical needs. We are
-        proud to offer pharmaceutical solutions that not only meet but exceed
-        industry standards.  At MediqemPharma, we prioritize patient safety and well-being,
-        which is why our products undergo rigorous testing and quality control
-        throughout their development and manufacturing processes. We are always
-        striving to improve and innovate, exploring new possibilities in
-        medicine to ensure that our offerings remain at the forefront of
-        healthcare. Below, we proudly present our range of carefully developed
-        products. Each product has been designed with specific medical needs in
-        mind and is formulated to provide effective solutions for various health
-        concerns. Whether you are a healthcare provider or a patient, our
-        products are created to help you manage and improve your health, with
-        the assurance of quality, reliability, and effectiveness.
+        pharmaceutical products that play a vital role in improving health.
       </p>
+
+      {/* Product Grid */}
       <div className="product-showcase-container">
-        {/* Product Grid */}
         <div className="product-grid">
           {products.map((product) => (
             <div
@@ -164,85 +144,142 @@ const Productpage1 = () => {
             </div>
           ))}
         </div>
+      </div>
 
-        {/* Modal for Product Details */}
-        {selectedProduct && (
-          <motion.div
-            className="product-modal"
-            initial={{ opacity: 0, scale: 0.8 }}
-            animate={{ opacity: 1, scale: 1 }}
-            exit={{ opacity: 0, scale: 0.8 }}
-          >
-            <div className="modal-content">
+      {/* Modal for Product Details */}
+      {selectedProduct && (
+        <motion.div
+          className="product-modal"
+          initial={{ opacity: 0, scale: 0.8 }}
+          animate={{ opacity: 1, scale: 1 }}
+          exit={{ opacity: 0, scale: 0.8 }}
+        >
+          <div className="modal-content">
+            <button
+              className="close-btn"
+              onClick={() => setSelectedProduct(null)}
+            >
+              ✖
+            </button>
+            <div className="modal-image-slider">
               <button
-                className="close-btn"
-                onClick={() => setSelectedProduct(null)}
+                className="slider-btn prev"
+                onClick={() => handleImageSlide("prev")}
               >
-                ✖
+                ◀
               </button>
-              <div className="modal-image-slider">
-                <button
-                  className="slider-btn prev"
-                  onClick={() => handleImageSlide("prev")}
-                >
-                  ◀
-                </button>
-                <img
-                  src={selectedProduct.images[currentImageIndex]}
-                  alt={`${selectedProduct.name} Image ${currentImageIndex + 1}`}
-                  className="slider-image"
-                />
-                <button
-                  className="slider-btn next"
-                  onClick={() => handleImageSlide("next")}
-                >
-                  ▶
-                </button>
-              </div>
-              <h3 className="modal-product-name">{selectedProduct.name}</h3>
-              <ul className="modal-product-details">
-                <li>
-                  <strong>Composition:</strong>
-                </li>
-                <ul className="composition-list">
-                  {selectedProduct.composition.map((line, index) => (
-                    <li key={index}>{line}</li>
-                  ))}
-                </ul>
-                <li>
-                  <strong>Color:</strong> {selectedProduct.color}
-                </li>
-                <li>
-                  <strong>Dosage:</strong> {selectedProduct.dosage}
-                </li>
-                <li>
-                  <strong>Storage:</strong> {selectedProduct.storage}
-                </li>
-                <li className="caution">
-                  <strong>Caution:</strong> {selectedProduct.caution}
-                </li>
-                <li>
-                  <strong>Manufacturer:</strong>
-                </li>
-                <ul className="manufacturer-details">
-                  <li>License: {selectedProduct.manufacturer.license}</li>
-                  <li>Company: {selectedProduct.manufacturer.company}</li>
-                  <li>Location: {selectedProduct.manufacturer.location}</li>
-                  <li>
-                    Website:{" "}
-                    <a
-                      href={`https://${selectedProduct.manufacturer.website}`}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      {selectedProduct.manufacturer.website}
-                    </a>
-                  </li>
-                </ul>
-              </ul>
+              <img
+                src={selectedProduct.images[currentImageIndex]}
+                alt={`${selectedProduct.name} Image ${currentImageIndex + 1}`}
+                className="slider-image"
+              />
+              <button
+                className="slider-btn next"
+                onClick={() => handleImageSlide("next")}
+              >
+                ▶
+              </button>
             </div>
-          </motion.div>
-        )}
+            <h3 className="modal-product-name">{selectedProduct.name}</h3>
+            <ul className="modal-product-details">
+              <li>
+                <strong>Composition:</strong>
+              </li>
+              <ul className="composition-list">
+                {selectedProduct.composition.map((line, index) => (
+                  <li key={index}>{line}</li>
+                ))}
+              </ul>
+              <li>
+                <strong>Color:</strong> {selectedProduct.color}
+              </li>
+              <li>
+                <strong>Dosage:</strong> {selectedProduct.dosage}
+              </li>
+              <li>
+                <strong>Storage:</strong> {selectedProduct.storage}
+              </li>
+              <li className="caution">
+                <strong>Caution:</strong> {selectedProduct.caution}
+              </li>
+              <li>
+                <strong>Manufacturer:</strong>
+              </li>
+              <ul className="manufacturer-details">
+                <li>License: {selectedProduct.manufacturer.license}</li>
+                <li>Company: {selectedProduct.manufacturer.company}</li>
+                <li>Location: {selectedProduct.manufacturer.location}</li>
+                <li>
+                  Website:{" "}
+                  <a
+                    href={`https://${selectedProduct.manufacturer.website}`}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    {selectedProduct.manufacturer.website}
+                  </a>
+                </li>
+              </ul>
+            </ul>
+          </div>
+        </motion.div>
+      )}
+
+      {/* Why Choose Us Section */}
+      <div className="why-choose-us">
+        <h2>Why Choose MediqemPharma?</h2>
+        <div className="features-grid">
+          <div className="feature-card">
+            <img
+              src="https://via.placeholder.com/100?text=Trust"
+              alt="Trust"
+              className="feature-icon"
+            />
+            <h3>Trusted by Experts</h3>
+            <p>Our products are backed by rigorous clinical research.</p>
+          </div>
+          <div className="feature-card">
+            <img
+              src="https://via.placeholder.com/100?text=Quality"
+              alt="Quality"
+              className="feature-icon"
+            />
+            <h3>Quality Assurance</h3>
+            <p>All products meet international quality standards.</p>
+          </div>
+          <div className="feature-card">
+            <img
+              src="https://via.placeholder.com/100?text=Innovation"
+              alt="Innovation"
+              className="feature-icon"
+            />
+            <h3>Innovation in Healthcare</h3>
+            <p>We strive to develop cutting-edge pharmaceutical solutions.</p>
+          </div>
+        </div>
+      </div>
+
+      {/* Photography Showcase Section */}
+      <div className="photography-showcase">
+        <h2>Our Facilities</h2>
+        <div className="photo-grid">
+          <img
+            src="https://via.placeholder.com/300?text=Facility+1"
+            alt="Facility 1"
+          />
+          <img
+            src="https://via.placeholder.com/300?text=Facility+2"
+            alt="Facility 2"
+          />
+          <img
+            src="https://via.placeholder.com/300?text=Facility+3"
+            alt="Facility 3"
+          />
+          <img
+            src="https://via.placeholder.com/300?text=Facility+4"
+            alt="Facility 4"
+          />
+        </div>
       </div>
     </>
   );

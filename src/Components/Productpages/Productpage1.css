@@ -1,60 +1,61 @@
-/* Overall Container */
-.product-showcase-container {
-  padding: 20px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+/* General Styles */
+body {
+  font-family: "Arial", sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f9f9f9;
+  color: #333;
 }
-.products-head{
+
+/* Products Header and Subheading */
+.products-head {
   text-align: center;
-  font-size: 3rem;
-  font-weight: 700;
-  margin-top: 10px;
+  font-size: 2.5rem;
+  color: #2c3e50;
+  margin-top: 2rem;
 }
-.products-subhead{
+
+.products-subhead {
   text-align: center;
   font-size: 1.2rem;
-  font-style: italic;
-  margin-bottom: 30px;
-  margin-left: 20px;
-  margin-right: 20px;
-  font-weight: 500;
-  border: 2px ;
-  ;
+  color: #7f8c8d;
+  margin: 0.5rem 0 2rem;
 }
+
 /* Product Grid */
 .product-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 20px;
-  width: 100%;
+  gap: 1.5rem;
+  padding: 1rem 2rem;
 }
 
 .product-card {
-  border: 1px solid #ddd;
-  border-radius: 8px;
-  padding: 10px;
+  background-color: #ffffff;
+  border: 1px solid #e1e1e1;
+  border-radius: 10px;
   text-align: center;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease;
   cursor: pointer;
+  padding: 1rem;
+  transition: transform 0.3s, box-shadow 0.3s;
 }
 
 .product-card:hover {
-  transform: scale(1.05);
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
 }
 
 .product-card-image {
   width: 100%;
   height: 150px;
   object-fit: cover;
-  border-radius: 4px;
+  border-radius: 8px;
 }
 
 .product-card-title {
-  margin-top: 10px;
-  font-size: 1.1rem;
-  color: #333;
+  font-size: 1.2rem;
+  color: #34495e;
+  margin-top: 0.8rem;
 }
 
 /* Modal Styles */
@@ -62,143 +63,163 @@
   position: fixed;
   top: 0;
   left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.5);
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.7);
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
   z-index: 1000;
 }
 
 .modal-content {
-  background: #fff;
-  padding: 20px;
-  border-radius: 8px;
-  width: 90%;
+  background-color: #ffffff;
+  border-radius: 10px;
+  padding: 2rem;
   max-width: 800px;
-  overflow-y: auto;
-  max-height: 90%;
+  width: 90%;
+  position: relative;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
 }
 
 .close-btn {
   position: absolute;
-  top: 10px;
-  right: 10px;
-  background: transparent;
+  top: 1rem;
+  right: 1rem;
+  background: none;
   border: none;
   font-size: 1.5rem;
   cursor: pointer;
-  color: white;
 }
 
-/* Image Slider */
 .modal-image-slider {
   display: flex;
   align-items: center;
-  margin-bottom: 20px;
-  position: relative;
+  justify-content: space-between;
 }
 
 .slider-btn {
-  background: #bebebe;
-  color: #fff;
+  font-size: 1.5rem;
+  background: none;
   border: none;
-  padding: 10px;
-  font-size: 1.2rem;
   cursor: pointer;
-  border-radius: 50%;
-  margin: 0 10px;
-  transition: background 0.3s ease;
-}
-
-.slider-btn:hover {
-  background: #5f5f5f;
 }
 
 .slider-image {
-  width: 100%;
-  max-height: 300px;
-  object-fit: contain;
+  max-width: 80%;
+  height: auto;
   border-radius: 8px;
 }
 
-/* Modal Details */
+.modal-product-name {
+  font-size: 1.8rem;
+  color: #34495e;
+  margin: 1rem 0;
+}
+
 .modal-product-details {
   list-style: none;
   padding: 0;
-  margin-top: 20px;
 }
 
-.modal-product-details li {
-  margin-bottom: 10px;
-  font-size: 1rem;
-  color: #333;
-}
-
-.composition-list {
-  margin-left: 20px;
+.composition-list, .manufacturer-details {
   list-style: disc;
+  padding-left: 1.5rem;
 }
 
 .caution {
-  color: red;
+  color: #c0392b;
   font-weight: bold;
 }
 
-.manufacturer-details {
-  margin-left: 20px;
-  list-style: none;
-}
-
-.manufacturer-details li a {
-  color: #005a8d;
-  text-decoration: none;
-}
-
-.manufacturer-details li a:hover {
-  text-decoration: underline;
-}
-/* Additional styles remain the same. */
-.product-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 20px;
-  width: 100%;
-}
-
-.product-card {
-  border: 1px solid #ddd;
-  border-radius: 8px;
-  padding: 10px;
+/* Why Choose Us Section */
+.why-choose-us {
+  background-color: #ecf0f1;
+  padding: 2rem;
   text-align: center;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease;
-  cursor: pointer;
-  background: #f9f9f9;
 }
 
-.product-card:hover {
+.why-choose-us h2 {
+  font-size: 2rem;
+  color: #2c3e50;
+  margin-bottom: 1.5rem;
+}
+
+.features-grid {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.feature-card {
+  background-color: #ffffff;
+  border: 1px solid #e1e1e1;
+  border-radius: 10px;
+  text-align: center;
+  padding: 1rem;
+  width: 250px;
+  margin: 1rem;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.feature-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.feature-icon {
+  width: 80px;
+  height: 80px;
+  margin-bottom: 1rem;
+}
+
+.feature-card h3 {
+  font-size: 1.3rem;
+  color: #34495e;
+}
+
+.feature-card p {
+  font-size: 1rem;
+  color: #7f8c8d;
+}
+
+/* Photography Showcase Section */
+.photography-showcase {
+  background-color: #ffffff;
+  padding: 2rem;
+  text-align: center;
+}
+
+.photography-showcase h2 {
+  font-size: 2rem;
+  color: #2c3e50;
+  margin-bottom: 1.5rem;
+}
+
+.photo-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1rem;
+  padding: 1rem;
+}
+
+.photo-grid img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  object-fit: cover;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+}
+
+.photo-grid img:hover {
   transform: scale(1.05);
 }
 
-.product-card-image {
-  width: 100%;
-  height: 180px;
-  object-fit: contain;
-  border-radius: 4px;
-}
-
-/* Modal and Slider styles remain unchanged. */
-
-
 /* Responsive Design */
 @media (max-width: 768px) {
-  .modal-content {
-    padding: 15px;
-  }
-
-  .slider-image {
-    max-height: 200px;
+  .features-grid, .photo-grid {
+    flex-direction: column;
+    gap: 1rem;
   }
 }
