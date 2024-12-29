@@ -4,6 +4,10 @@ import { motion } from "framer-motion";
 import Why from "../../assets/whyschose.jpg";
 import Quality from "../../assets/quality.png";
 import Inno from "../../assets/inno.jpg";
+import Dye from "../../assets/dyefill.png";
+import Weight from "../../assets/weight.jpg";
+import Compact from "../../assets/compact.png";
+import eject from "../../assets/eject.png";
 const products = [
   {
     id: 1,
@@ -264,22 +268,22 @@ const Productpage1 = () => {
 
       {/* Photography Showcase Section */}
       <div className="photography-showcase">
-        <h2>Our Facilities</h2>
+        <h2>Manufacturing Process</h2>
         <div className="photo-grid">
           <img
-            src="https://via.placeholder.com/300?text=Facility+1"
+            src={Dye}
             alt="Facility 1"
           />
           <img
-            src="https://via.placeholder.com/300?text=Facility+2"
+            src={Weight}
             alt="Facility 2"
           />
           <img
-            src="https://via.placeholder.com/300?text=Facility+3"
+            src={Compact}
             alt="Facility 3"
           />
           <img
-            src="https://via.placeholder.com/300?text=Facility+4"
+            src={eject}
             alt="Facility 4"
           />
         </div>

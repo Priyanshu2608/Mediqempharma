@@ -49,10 +49,10 @@ const Contact = () => {
             <div className="reviews-container">
               <div className="review-card">
                 <div className="review-text">
-                  <p>"The service was fantastic! I highly recommend them."</p>
+                  <p>"By seeing their product quality and service tactics I can say Mediqem Pharma is the best at their work."</p>
                 </div>
                 <div className="review-author">
-                  <p>- John Doe</p>
+                  <p>- Priyanshu Vasudev</p>
                   <div className="stars">
                     <span>⭐⭐⭐⭐⭐</span>
                   </div>
@@ -60,10 +60,10 @@ const Contact = () => {
               </div>
               <div className="review-card">
                 <div className="review-text">
-                  <p>"Excellent experience from start to finish!"</p>
+                  <p>"I was a bit worried at first about how the products would be but it was the best and from packaging quality to assurance of work everyone was fulfiled"</p>
                 </div>
                 <div className="review-author">
-                  <p>- Jane Smith</p>
+                  <p>- Rohit Raj</p>
                   <div className="stars">
                     <span>⭐⭐⭐⭐⭐</span>
                   </div>
@@ -71,10 +71,10 @@ const Contact = () => {
               </div>
               <div className="review-card">
                 <div className="review-text">
-                  <p>"Professional, efficient, and friendly service. 10/10!"</p>
+                  <p>"The Expereince was amazing, the team was great, helped me at every point and the products were damn good."</p>
                 </div>
                 <div className="review-author">
-                  <p>- Michael Johnson</p>
+                  <p>- Punya Kumar </p>
                   <div className="stars">
                     <span>⭐⭐⭐⭐⭐</span>
                   </div>
