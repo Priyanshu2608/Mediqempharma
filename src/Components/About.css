@@ -95,6 +95,70 @@ p {
   font-size: 1.1em;
   line-height: 1.6;
 }
+/* Message From The Team Box */
+.team-message {
+  background-color: #f4f7fa;
+  padding: 50px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.team-message-box {
+  background-color: #fff;
+  padding: 30px 40px;
+  width: 80%;
+  max-width: 800px;
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.team-message-box h2 {
+  font-size: 2.5rem;
+  color: #0066cc;
+  margin-bottom: 20px;
+}
+
+.team-message-box p {
+  font-size: 1.2rem;
+  color: #333;
+  line-height: 1.8;
+  font-weight: 400;
+}
+
+/* Responsive Design for the Team Message */
+@media screen and (max-width: 768px) {
+  .team-message-box {
+    padding: 20px;
+    width: 90%;
+  }
+
+  .team-message-box h2 {
+    font-size: 2rem;
+  }
+
+  .team-message-box p {
+    font-size: 1.1rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .team-message-box {
+    padding: 15px;
+    width: 95%;
+  }
+
+  .team-message-box h2 {
+    font-size: 1.8rem;
+  }
+
+  .team-message-box p {
+    font-size: 1rem;
+  }
+}
+
 
 /* Responsive Design */
 @media screen and (max-width: 768px) {

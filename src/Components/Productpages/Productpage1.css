@@ -11,9 +11,9 @@ body {
 /* Products Header and Subheading */
 .products-head {
   text-align: center;
-  font-size: 2.5rem;
+  font-size: 3rem;  /* Increased for prominence */
   color: #2c3e50;
-  margin-top: 2rem;
+  margin-top: 3rem;  /* Increased margin */
 }
 
 .products-subhead {
@@ -26,8 +26,8 @@ body {
 /* Product Grid */
 .product-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 1.5rem;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Increased min width */
+  gap: 2rem; /* Increased gap for more space between cards */
   padding: 1rem 2rem;
   justify-items: center;
   max-width: 100%;
@@ -37,32 +37,33 @@ body {
 .product-card {
   background-color: #ffffff;
   border: 1px solid #e1e1e1;
-  border-radius: 10px;
+  border-radius: 15px;  /* Increased border-radius */
   text-align: center;
   cursor: pointer;
-  padding: 1rem;
+  padding: 2rem;  /* Increased padding */
   transition: transform 0.3s, box-shadow 0.3s;
   width: 100%;
-  max-width: 300px;
+  max-width: 350px;  /* Increased max-width for better prominence */
   margin: 0 auto;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);  /* Adding initial shadow */
 }
 
 .product-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  transform: translateY(-8px);  /* Slightly more hover elevation */
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);  /* Stronger shadow on hover */
 }
 
 .product-card-image {
   width: 100%;
-  height: 150px;
+  height: 200px;  /* Increased height for images */
   object-fit: cover;
-  border-radius: 8px;
+  border-radius: 10px;
 }
 
 .product-card-title {
-  font-size: 1.2rem;
+  font-size: 1.4rem;  /* Larger title font */
   color: #34495e;
-  margin-top: 0.8rem;
+  margin-top: 1rem;
 }
 
 /* Modal Styles */
@@ -81,12 +82,12 @@ body {
 
 .modal-content {
   background-color: #ffffff;
-  border-radius: 10px;
-  padding: 1rem;
+  border-radius: 15px; /* Increased border-radius for the modal */
+  padding: 1.5rem;
   max-width: 800px;
   width: 90%;
   position: relative;
-  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3);
   text-align: center;
   max-height: 80vh;
   overflow-y: auto;
@@ -122,9 +123,9 @@ body {
 }
 
 .modal-product-name {
-  font-size: 1.8rem;
+  font-size: 2rem;  /* Increased size for product name */
   color: #34495e;
-  margin: 1rem 0;
+  margin: 1.5rem 0;
 }
 
 .modal-product-details {
@@ -151,7 +152,7 @@ body {
 }
 
 .why-choose-us h2 {
-  font-size: 2rem;
+  font-size: 2.5rem;  /* Increased font size */
   color: #2c3e50;
   margin-bottom: 1.5rem;
 }
@@ -161,7 +162,7 @@ body {
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  gap: 1rem;
+  gap: 1.5rem;
   margin: 0 auto;
   max-width: 100%;
 }
@@ -169,32 +170,32 @@ body {
 .feature-card {
   background-color: #ffffff;
   border: 1px solid #e1e1e1;
-  border-radius: 10px;
+  border-radius: 15px; /* Increased radius */
   text-align: center;
-  padding: 2rem;
+  padding: 2.5rem;
   width: 350px;
   margin: 1rem;
   transition: transform 0.3s, box-shadow 0.3s;
 }
 
 .feature-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  transform: translateY(-8px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
 }
 
 .feature-icon {
-  width: 80px;
-  height: 80px;
-  margin-bottom: 1rem;
+  width: 90px;
+  height: 90px;
+  margin-bottom: 1.5rem;
 }
 
 .feature-card h3 {
-  font-size: 1.3rem;
+  font-size: 1.4rem; /* Larger heading */
   color: #34495e;
 }
 
 .feature-card p {
-  font-size: 1rem;
+  font-size: 1.1rem; /* Slightly larger text */
   color: #7f8c8d;
 }
 
@@ -207,7 +208,7 @@ body {
 }
 
 .photography-showcase h2 {
-  font-size: 2rem;
+  font-size: 2.5rem; /* Increased size for heading */
   color: #2c3e50;
   margin-bottom: 1.5rem;
 }
@@ -215,7 +216,7 @@ body {
 .photo-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 1rem;
+  gap: 1.5rem;
   padding: 1rem;
   justify-content: center;
   margin: 0 auto;
@@ -237,20 +238,16 @@ body {
 /* Responsive Design */
 @media (max-width: 1280px) {
   .products-head {
-    font-size: 2.2rem;
-  }
-
-  .products-subhead {
-    font-size: 1rem;
+    font-size: 2.6rem; /* Slightly smaller but still prominent */
   }
 
   .product-grid {
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-    padding: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   }
 
   .product-card {
-    max-width: 280px;
+    max-width: 320px;
+    padding: 2.5rem;  /* Slight increase in padding */
   }
 
   .modal-content {
@@ -260,40 +257,42 @@ body {
 
 @media (max-width: 1024px) {
   .features-grid {
-    gap: 1.5rem;
+    gap: 2rem; /* Increased gap */
   }
 
   .feature-card {
     width: 100%;
-    max-width: 300px;
+    max-width: 350px;
   }
 
   .photo-grid {
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  }
+
+  .product-card {
+    max-width: 300px;
+    padding: 2.5rem;
   }
 
   .modal-content {
     max-width: 700px;
-    padding: 1.5rem;
-  }
-
-  .product-grid {
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    padding: 2rem;
   }
 }
 
 @media (max-width: 768px) {
   .products-head {
-    font-size: 2rem;
+    font-size: 2.2rem;
   }
 
   .product-card {
     max-width: 90%;
+    padding: 2rem;
   }
 
   .modal-content {
     max-width: 650px;
-    padding: 1rem;
+    padding: 1.5rem;
   }
 
   .photo-grid {
@@ -304,42 +303,21 @@ body {
     width: 100%;
     max-width: 320px;
   }
-
-  .product-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .feature-icon {
-    width: 70px;
-    height: 70px;
-  }
 }
 
 @media (max-width: 480px) {
   .products-head {
-    font-size: 1.8rem;
-  }
-
-  .products-subhead {
-    font-size: 1rem;
-  }
-
-  .product-grid {
-    grid-template-columns: 1fr;
-    padding: 1rem;
+    font-size: 2rem;
   }
 
   .product-card {
     max-width: 100%;
+    padding: 2rem;
   }
 
   .modal-content {
     max-width: 90%;
     padding: 1rem;
-  }
-
-  .modal-product-name {
-    font-size: 1.5rem;
   }
 
   .feature-card {
@@ -353,6 +331,6 @@ body {
   }
 
   .why-choose-us h2 {
-    font-size: 1.6rem;
+    font-size: 1.8rem;
   }
 }

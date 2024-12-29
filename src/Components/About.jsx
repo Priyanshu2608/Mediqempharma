@@ -76,6 +76,18 @@ function About() {
           </div>
         </section>
       </div>
+      <section className="team-message">
+  <div className="team-message-box">
+    <h2>Message From The Team</h2>
+    <p>
+      At MediqemPharma, we believe that the key to success lies in a unified team working towards a common goal. 
+      Our dedicated professionals are committed to advancing healthcare through innovation, compassion, and integrity.
+      Together, we strive to make a positive difference in the lives of our patients and communities. We are driven 
+      by the belief that healthcare should be accessible to all, and we are honored to contribute to this vision every day.
+    </p>
+  </div>
+</section>
+
       <Footer />
       
     </>
