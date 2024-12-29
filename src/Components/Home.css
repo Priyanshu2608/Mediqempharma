@@ -17,9 +17,7 @@ body, html {
   transition: transform 0.5s ease;
 }
 
-.home-container:hover {
-  transform: scaleY(1.1);
-}
+
 
 .home-content {
   position: absolute;

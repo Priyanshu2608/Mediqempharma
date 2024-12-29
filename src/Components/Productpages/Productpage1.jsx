@@ -1,6 +1,9 @@
 import React, { useState } from "react";
 import "./Productpage1.css";
 import { motion } from "framer-motion";
+import Why from "../../assets/whyschose.jpg";
+import Quality from "../../assets/quality.png";
+import Inno from "../../assets/inno.jpg";
 const products = [
   {
     id: 1,
@@ -150,7 +153,7 @@ const Productpage1 = () => {
       {selectedProduct && (
         <motion.div
           className="product-modal"
-          initial={{ opacity: 0, scale: 0.8 }}
+          initial={{ opacity: 0, scale: 0.8,  }}
           animate={{ opacity: 1, scale: 1 }}
           exit={{ opacity: 0, scale: 0.8 }}
         >
@@ -231,7 +234,7 @@ const Productpage1 = () => {
         <div className="features-grid">
           <div className="feature-card">
             <img
-              src="https://via.placeholder.com/100?text=Trust"
+              src={Why}
               alt="Trust"
               className="feature-icon"
             />
@@ -240,7 +243,7 @@ const Productpage1 = () => {
           </div>
           <div className="feature-card">
             <img
-              src="https://via.placeholder.com/100?text=Quality"
+              src={Quality}
               alt="Quality"
               className="feature-icon"
             />
@@ -249,7 +252,7 @@ const Productpage1 = () => {
           </div>
           <div className="feature-card">
             <img
-              src="https://via.placeholder.com/100?text=Innovation"
+              src={Inno}
               alt="Innovation"
               className="feature-icon"
             />
