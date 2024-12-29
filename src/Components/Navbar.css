@@ -1,11 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
-body,ul,li {
+body, ul, li {
   margin: 0;
   padding: 0;
   list-style: none;
-  font-family: "Arial", sans-serif;
- 
+  font-family: "Poppins", sans-serif;
 }
 
 .navbar {
@@ -13,13 +12,11 @@ body,ul,li {
   justify-content: space-between;
   align-items: center;
   padding: 0.8rem 2rem;
-  background-color:#f5f9fc;
+  background-color: #f5f9fc;
   box-shadow: 8px 10px 10px 5px rgba(0, 0, 0, 0.1);
   position: relative;
   z-index: 1;
-  
- 
-
+  transition: all 0.3s ease-in-out; /* Smooth transition for background and shadow */
 }
 
 .navbar-logo {
@@ -32,47 +29,80 @@ body,ul,li {
   height: 60px;
   margin-right: 1rem;
   object-fit: contain;
-  border-radius: 50%;
+  border-radius: 10%;
+  transition: transform 0.3s ease-in-out; /* Added a smooth scale effect */
 }
 
-.logo-placeholder {
-  width: 50px;
-  height: 50px;
-  background-color: #4caf50;
-  border-radius: 50%;
-  margin-right: 1rem;
+.logo-image:hover {
+  transform: scale(1.1); /* Slight zoom effect on hover */
 }
 
 .navbar-title {
-    font-size: 1.55rem;
-    font-weight: 500;
-    font-family: 'Times New Roman', Times, serif;
-    color: black;
-    font-style: italic;
-    text-align: center;
-    color: #ff0000; 
-    background-image: linear-gradient(45deg, #ff0000 21%, #0023ad 70%); 
-    background-clip: text; 
-    -webkit-background-clip: text; 
-    -webkit-text-fill-color: transparent; 
-    
-  }
-  
+  font-size: 1.55rem;
+  font-weight: 500;
+  font-family: 'Times New Roman', Times, serif;
+  color: black;
+  font-style: italic;
+  text-align: center;
+  color: #ff0000;
+  background-image: linear-gradient(45deg, #ff0000 21%, #0023ad 70%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: color 0.3s ease-in-out; /* Smooth text color transition */
+}
 
 /* Navigation Links */
 .navbar-links {
   display: flex;
   gap: 5.5rem;
+  transition: transform 0.3s ease-in-out; /* Added transition for the entire navbar links */
 }
 
 .navbar-links a {
   text-decoration: none;
   color: #000000;
   font-size: 19px;
-  transition: color 0.3s ease;
+  transition: all 0.3s ease;
   font-weight: 700;
+  padding: 5px 0; /* Added padding for better click area */
 }
 
 .navbar-links a:hover {
   color: #0e24e8;
+  transform: translateY(-3px); /* Added lift effect on hover */
+}
+
+.navbar-links a:active {
+  transform: translateY(1px); /* Added a slight push-down effect on click */
+}
+
+/* Adding subtle hover animation to the navbar */
+.navbar-links a {
+  position: relative;
+  display: inline-block;
+}
+
+.navbar-links a::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 3px;
+  background-color: #0e24e8;
+  bottom: 0;
+  left: 50%;
+  transition: width 0.3s ease-in-out, left 0.3s ease-in-out;
+  transform: translateX(-50%);
+}
+
+.navbar-links a:hover::after {
+  width: 100%;
+  left: 0;
+}
+
+/* For the Loading State */
+.navbar-links a.loading {
+  pointer-events: none;
+  opacity: 0.6;
+  cursor: wait;
 }

@@ -5,6 +5,7 @@ import Foot from '../Components/Footer.jsx'
 
 
 
+
 const Home = () => {
   const nextSectionRef = useRef(null);
 
@@ -21,7 +22,7 @@ const Home = () => {
         <div className="home-content">
           <h1 className="home-title">Welcome to MediqemPharma</h1>
           <p className="home-subtitle">"Committed to quality"</p>
-          <button className="know-more-btn" onClick={scrollToNextSection}>
+          <button className="know-more-home" onClick={scrollToNextSection}>
             Know More
           </button>
         </div>

@@ -14,6 +14,11 @@ body, html {
     justify-content: center;
     align-items: center;
     border-bottom: 2px solid black; 
+    transition: transform ease 0.5s;
+  }
+  .home-container:hover{
+    transform:scaley(1.1);
+    
   }
   .home-content {
     position: absolute;
@@ -37,7 +42,7 @@ body, html {
     margin-top: 1rem;
     font-style: italic;
   }
-  .know-more-btn {
+  .know-more-home {
     margin-top: 20px;
     padding: 15px 30px;
     font-size: 1.2rem;
