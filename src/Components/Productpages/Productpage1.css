@@ -298,6 +298,10 @@ body {
     padding: 1rem;
     margin-left: 10px;
   }
+  .slider-image {
+    max-width: 100%; /* Allow full width for smaller screens */
+    max-height: 40vh; /* Slightly smaller height for compact devices */
+  }
 
   .modal-content {
     max-width: 650px;
@@ -317,6 +321,10 @@ body {
 @media (max-width: 480px) {
   .products-head {
     font-size: 2rem;
+  }
+  .slider-image {
+    max-width: 100%; /* Full width for very small screens */
+    max-height: 35vh; /* Reduce height further for compact viewports */
   }
 
   .product-card {
