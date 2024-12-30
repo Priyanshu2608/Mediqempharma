@@ -33,7 +33,7 @@ const Productform = () => {
     
     <section className="contact">
             <form onSubmit={onSubmit}>
-                <h2> Have Product Enquiries? Don't Worry We Gotch You, Give Us an Enquiry Message Directly From Here Or Just Vist Our Contact Page and Contact Us.</h2>
+                <h2> Have Product Enquiries? Don't Worry We Gotch You, Give Us an Enquiry Message Directly From Here Or Just Visit Our Contact Page and Contact Us.</h2>
                 <div className="input-form">
                     <label>Full Name </label>
                     <input type="text" className='field' placeholder='Enter Your Name' name='name' required />
