@@ -128,7 +128,7 @@ p {
   font-weight: 400;
 }
 
-/* Responsive Design for the Team Message */
+
 @media screen and (max-width: 768px) {
   .team-message-box {
     padding: 20px;
@@ -160,7 +160,7 @@ p {
 }
 
 
-/* Responsive Design */
+
 @media screen and (max-width: 768px) {
   .about-header h1 {
     font-size: 2.5em;
@@ -179,7 +179,7 @@ p {
   }
 
   .about-content {
-    flex-direction: column; /* Stack items vertically */
+    flex-direction: column; 
     margin: 20px 0;
   }
 

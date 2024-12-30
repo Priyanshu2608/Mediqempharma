@@ -15,6 +15,8 @@ import Moxicv1 from "../../assets/Moxicv1.png";
 import Moxicv2 from "../../assets/moxicv2.png";
 import Moxidds1 from "../../assets/moxidds1.png";
 import Moxidds2 from "../../assets/moxidds3.png";
+import Bact from "../../assets/bactrofix.png";
+import Well from "../../assets/wellraft.png";
 const products = [
   {
     id: 1,
@@ -67,8 +69,7 @@ const products = [
       website: "www.polestarpharma.com",
     },
   },
-
-  {
+    {
     id: 3,
     name: "MOXIQEM-CV DDS",
     images: [Moxidds1, Moxidds2],
@@ -98,6 +99,41 @@ const products = [
       website: "www.polestarpharma.com",
     },
   },
+    {
+      id: 4,
+      name: "BACTROFIX OINTMENT",
+      images: [
+        Bact,
+        
+      ],
+      composition: ["Composition details for product 4"],
+      color: "Color 4",
+      dosage: "Dosage 4",
+      storage: "Storage instructions for product 4",
+      caution: "Caution details for product 4",
+      manufacturer: {
+        license: "License 4",
+        company: "Company Name 4",
+        location: "Location 4",
+        website: "www.example4.com",
+      },
+    },
+    {
+      id: 5,
+      name: "WELLRAFT",
+      images: [Well,],
+      composition: ["Composition details for product 5"],
+      color: "Color 5",
+      dosage: "Dosage 5",
+      storage: "Storage instructions for product 5",
+      caution: "Caution details for product 5",
+      manufacturer: {
+        license: "License 5",
+        company: "Company Name 5",
+        location: "Location 5",
+        website: "www.example5.com",
+      },
+  }
 ];
 const Productpage1 = () => {
   const [selectedProduct, setSelectedProduct] = useState(null);
@@ -117,14 +153,11 @@ const Productpage1 = () => {
 
   return (
     <>
-      {/* Existing Header and Subheading */}
       <h2 className="products-head">Our Products</h2>
       <p className="products-subhead">
         At MediqemPharma, we are committed to providing world-class
         pharmaceutical products that play a vital role in improving health.
       </p>
-
-      {/* Product Grid */}
       <div className="product-showcase-container">
         <div className="product-grid">
           {products.map((product) => (
@@ -146,8 +179,6 @@ const Productpage1 = () => {
           ))}
         </div>
       </div>
-
-      {/* Modal for Product Details */}
       {selectedProduct && (
         <motion.div
           className="product-modal"
@@ -225,8 +256,6 @@ const Productpage1 = () => {
           </div>
         </motion.div>
       )}
-
-      {/* Why Choose Us Section */}
       <div className="why-choose-us">
         <h2>Why Choose MediqemPharma?</h2>
         <div className="features-grid">
@@ -247,8 +276,6 @@ const Productpage1 = () => {
           </div>
         </div>
       </div>
-
-      {/* Photography Showcase Section */}
       <div className="photography-showcase">
         <h2>Manufacturing Process</h2>
         <div className="photo-grid">

@@ -9,17 +9,14 @@ const Navbar = () => {
 
   const handleNavigation = (path) => {
     setLoading(true);
-
-    // Simulate a delay before navigating
     setTimeout(() => {
       navigate(path);
       setLoading(false);
-    }, 1000); // 1-second delay (you can adjust this)
+    }, 1000); 
   };
 
   return (
     <nav className="navbar">
-      {/* Make the logo clickable to route to Home */}
       <div className="navbar-logo">
         <Link to="/">
           <img src={Logo} alt="MediqemPharma Logo" className="logo-image" />

@@ -1,14 +1,13 @@
-/* General Container */
+
 .container {
   max-width: 1200px;
   margin: 0 auto;
   padding: 40px;
   background-color: #f8f8f8;
   font-family: 'Arial', sans-serif;
-  overflow-x: hidden; /* Prevent horizontal scrolling during animations */
+  overflow-x: hidden; 
 }
 
-/* Box Container */
 .boxes {
   margin-bottom: 50px;
 }
@@ -42,11 +41,11 @@
   font-style: italic;
 }
 
-/* Card Container */
+
 .cards {
   display: grid;
-  grid-template-columns: repeat(3, 1fr); /* 3 cards per row */
-  gap: 30px; /* Spacing between cards */
+  grid-template-columns: repeat(3, 1fr); 
+  gap: 30px; 
   margin-top: 40px;
 }
 
@@ -82,7 +81,7 @@
   font-weight: 300;
 }
 
-/* Hover Effect for Cards */
+
 .card:hover {
   transform: translateY(-8px) scale(1.02);
   box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
@@ -92,7 +91,7 @@
   transform: scale(1.1);
 }
 
-/* Image Container */
+
 .image-container {
   position: relative;
   width: 100%;
@@ -152,12 +151,12 @@
   background-color: #003f66;
 }
 
-/* Responsive Design */
 
-/* Tablets (landscape and portrait) */
+
+
 @media (max-width: 1024px) {
   .cards {
-    grid-template-columns: repeat(2, 1fr); /* 2 cards per row */
+    grid-template-columns: repeat(2, 1fr); 
     gap: 20px;
   }
 
@@ -174,10 +173,10 @@
   }
 }
 
-/* Small Tablets & Large Smartphones */
+
 @media (max-width: 768px) {
   .cards {
-    grid-template-columns: 1fr; /* Single column */
+    grid-template-columns: 1fr;
   }
 
   .image-container .image-text {
@@ -192,7 +191,7 @@
   }
 }
 
-/* Smartphones (e.g., iPhone 12, Samsung Galaxy S20 Ultra) */
+
 @media (max-width: 576px) {
   .container {
     padding: 10px;
@@ -223,7 +222,6 @@
   }
 }
 
-/* Very Small Devices (e.g., iPhone SE, smaller screens) */
 @media (max-width: 360px) {
   .box h2 {
     font-size: 1.8rem;

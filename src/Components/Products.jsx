@@ -1,6 +1,5 @@
 import React, { useRef } from "react";
 import "./Product.css";
-import Product1 from './Productpages/Productpage1.jsx';
 import Footer from "./Footer.jsx";
 import product1 from "../assets/product1.jpg";
 import Productpage1 from "./Productpages/Productpage1.jsx";

@@ -21,13 +21,13 @@ body, html {
 
 .home-content {
   position: absolute;
-  top: 43%; /* Adjusted for consistent centering */
+  top: 43%; 
   left: 27%;
   transform: translate(-50%, -50%);
   text-align: center;
   color: white;
   text-shadow: 0 3px 4px rgba(0, 0, 0, 0.6);
-  padding: 0 1rem; /* Added padding to prevent content overflow */
+  padding: 0 1rem; 
 }
 
 .home-title {
@@ -71,8 +71,6 @@ body, html {
   height: 100vh;
   background-color: rgb(237, 237, 237);
 }
-
-/* Responsive Design */
 @media (max-width: 1024px) {
   .home-title {
     font-size: 2rem;
@@ -127,7 +125,7 @@ body, html {
   }
 
   .home-content {
-    top: 55%; /* Adjusted for smaller screens */
+    top: 55%; 
     padding: 0 1rem;
   }
 }

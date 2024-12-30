@@ -50,7 +50,6 @@ body, ul, li {
   text-align: center;
 }
 
-/* Navigation Links */
 .navbar-links {
   display: flex;
   gap: 4rem;
@@ -75,7 +74,6 @@ body, ul, li {
   transform: translateY(1px);
 }
 
-/* Adding hover underline animation */
 .navbar-links a {
   position: relative;
 }
@@ -97,7 +95,6 @@ body, ul, li {
   left: 0;
 }
 
-/* Responsive Navbar */
 @media (max-width: 1024px) {
   .navbar {
     padding: 1rem;

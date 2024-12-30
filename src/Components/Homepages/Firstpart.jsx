@@ -56,7 +56,7 @@ const Firstpart = () => {
 
   return (
     <div className="container">
-      {/* Box Section */}
+     
       <div className="boxes">
         {boxData.map((box, index) => (
           <div className="box" key={index}>
@@ -66,7 +66,7 @@ const Firstpart = () => {
         ))}
       </div>
 
-      {/* Card Section */}
+     
       <div className="cards">
         {cardData.map((card, index) => (
           <div className="card" key={index}>
@@ -77,7 +77,7 @@ const Firstpart = () => {
         ))}
       </div>
 
-      {/* Image Section */}
+      
       <div className="image-container">
         <img className="pic1" src={pic1} alt="products" />
         <div className="image-text">Advancing Healthcare with Excellence</div>
@@ -95,7 +95,7 @@ const Firstpart = () => {
         </div>
       </div>
 
-      {/* Enquire Component */}
+    
       <Second />
     </div>
   );

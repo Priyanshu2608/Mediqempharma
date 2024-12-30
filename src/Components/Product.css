@@ -1,10 +1,9 @@
-/* General Styling */
 body {
   margin: 0;
   font-family: 'Arial', sans-serif;
 }
 
-/* Product Container */
+
 .product-container {
   position: relative;
   width: 100%;
@@ -13,7 +12,6 @@ body {
   border-bottom: 4px solid black;
 }
 
-/* Hero Section */
 .product-hero {
   position: relative;
   display: flex;
@@ -37,14 +35,13 @@ body {
   transform: scale(1.1);
 }
 
-/* Overlay Content */
 .overlay-content {
   position: absolute;
   text-align: center;
   color: white;
   z-index: 2;
   animation: fadeInUp 1s ease-out;
-  padding: 0 1rem; /* Padding for content responsiveness */
+  padding: 0 1rem; 
 }
 
 .product-title {
@@ -55,7 +52,7 @@ body {
   animation: fadeIn 1s ease;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 2rem; /* Adjust for better spacing */
+  margin-bottom: 2rem;
 }
 
 .product-subtitle {
@@ -66,7 +63,7 @@ body {
   animation: fadeIn 1.2s ease;
   margin-left: auto;
   margin-right: auto;
-  margin-top: -10px; /* Adjust for better alignment */
+  margin-top: -10px; 
 }
 
 .know-more-btn {
@@ -84,7 +81,7 @@ body {
   animation: fadeIn 1.4s ease;
   margin-left: auto;
   margin-right: auto;
-  display: inline-block; /* Ensures button centers properly */
+  display: inline-block; 
 }
 
 .know-more-btn:hover {
@@ -92,14 +89,14 @@ body {
   transform: scale(1.1);
 }
 
-/* Scroll Section */
+
 .product-showcase {
   margin: 40px auto;
   padding: 40px;
   text-align: center;
 }
 
-/* Animations */
+
 @keyframes fadeInUp {
   from {
     opacity: 0;
@@ -120,7 +117,7 @@ body {
   }
 }
 
-/* Responsive Design */
+
 @media (max-width: 1024px) {
   .product-title {
     font-size: 3rem;
@@ -138,7 +135,7 @@ body {
 
 @media (max-width: 768px) {
   .overlay-content {
-    padding: 0 2rem; /* Increase padding for mobile devices */
+    padding: 0 2rem; 
   }
 
   .product-title {
