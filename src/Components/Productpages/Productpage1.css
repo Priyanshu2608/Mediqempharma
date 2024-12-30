@@ -250,6 +250,7 @@ body {
 
   .product-grid {
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    margin-right: 10px;
   }
 
   .product-card {
@@ -295,6 +296,7 @@ body {
   .product-card {
     max-width: 90%;
     padding: 1rem;
+    margin-left: 10px;
   }
 
   .modal-content {
@@ -320,7 +322,8 @@ body {
   .product-card {
     max-width: 100%;
     padding: 1rem;
-    margin: 0 auto;
+    margin: 0 auto 0px 30px;
+    margin-right: 30px;
   }
 
   .modal-content {
