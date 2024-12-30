@@ -117,13 +117,15 @@ body {
 }
 
 
-  .slider-image {
-    width: 100%; /* Ensure it takes up the container's width */
-    max-width: 550px; /* Set a maximum width for consistency */
-    height: 300px; /* Set a fixed height for uniformity */
-    object-fit: cover; /* Maintain aspect ratio and crop if necessary */
-    border-radius: 10px; /* Optional: Keep the border-radius for aesthetic consistency */
-  }
+.slider-image {
+  width: 100%; /* Take full width of the container */
+  max-width: 90%; /* Adjust max width for smaller screens */
+  height: auto; /* Maintain aspect ratio */
+  max-height: 50vh; /* Ensure the height doesn’t dominate the screen */
+  object-fit: cover; /* Maintain aspect ratio and crop if necessary */
+  border-radius: 10px; /* Optional: aesthetic border-radius */
+  margin: 0 auto; /* Center align the images */
+}
   
 
 .modal-product-name {
