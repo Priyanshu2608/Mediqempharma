@@ -22,7 +22,7 @@ const Contact = () => {
               <div className="info-icon">✉️</div>
               <div className="info-text">
                 <h3>Email Address</h3>
-                <p className="info-detail">priyanshuvasudev2005@gmail.com</p>
+                <p className="info-detail">mediqempharma@gmail.com</p>
               </div>
             </div>
             <div className="info-box">
