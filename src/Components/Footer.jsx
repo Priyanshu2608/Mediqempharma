@@ -39,6 +39,10 @@ const Footer = () => {
             
             <div className="footer-bottom">
                 <p>&copy; {new Date().getFullYear()} MediqemPharma. All rights reserved.</p>
+                <h4 className="dev">Designed and Developed By Adiyogi Creations</h4>
+                <h4 className="dev">Developer: Priyanshu Vasudev</h4>
+                <h4 className="dev">Contact: 9872854883</h4>
+
             </div>
         </footer>
     );
