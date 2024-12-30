@@ -64,7 +64,7 @@ body {
 .product-card-title {
   font-size: 1.4rem;  /* Larger title font */
   color: #34495e;
-  margin-top: 1rem;
+  margin-top: -0.3rem;
 }
 
 /* Modal Styles */

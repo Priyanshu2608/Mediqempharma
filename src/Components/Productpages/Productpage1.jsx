@@ -19,10 +19,7 @@ const products = [
   {
     id: 1,
     name: "MOXIQEM-CV 625",
-    images: [
-      Moxi,
-      Moxi3,
-    ],
+    images: [Moxi, Moxi3],
     composition: [
       "Each film-coated tablet contains:",
       "Amoxycillin Trihydrate I.P. - Equivalent to Amoxycillin 500 mg",
@@ -46,15 +43,9 @@ const products = [
   {
     id: 2,
     name: "MOXIQEM-CV",
-    images: [
-      Moxicv1,
-      Moxicv2,
-    ],
+    images: [Moxicv1, Moxicv2],
     composition: [
-      "Each 5 ml of the reconstituted suspension contains:",
-      "Amoxycillin Trihydrate I.P. - Equivalent to Amoxycillin 200 mg",
-      "Potassium Clavulanate Diluted I.P. - Equivalent to Clavulanic Acid 28.5 mg",
-      "Excipients - q.s.",
+      "Amoxicillin/clavulanic acid, also known as co-amoxiclav or amox-clav, sold under the brand name MoxiQem CV, among others, is an antibiotic medication used for the treatment of a number of bacterial infections. It is a combination consisting of amoxicillin, a β-lactam antibiotic, and potassium clavulanate, a β-lactamase inhibitor. It is specifically used for otitis media, streptococcal pharyngitis, pneumonia, cellulitis, urinary tract infections, and animal bites.It is taken by mouth",
     ],
     dosage: "As directed by the Physician.",
     storage:
@@ -80,10 +71,7 @@ const products = [
   {
     id: 3,
     name: "MOXIQEM-CV DDS",
-    images: [
-      Moxidds1,
-      Moxidds2,
-    ],
+    images: [Moxidds1, Moxidds2],
     composition: [
       "Each 5 ml of the reconstituted suspension contains:",
       "Amoxycillin Trihydrate I.P. - Equivalent to Amoxycillin 400 mg",
@@ -163,7 +151,7 @@ const Productpage1 = () => {
       {selectedProduct && (
         <motion.div
           className="product-modal"
-          initial={{ opacity: 0, scale: 0.8,  }}
+          initial={{ opacity: 0, scale: 0.8 }}
           animate={{ opacity: 1, scale: 1 }}
           exit={{ opacity: 0, scale: 0.8 }}
         >
@@ -243,29 +231,17 @@ const Productpage1 = () => {
         <h2>Why Choose MediqemPharma?</h2>
         <div className="features-grid">
           <div className="feature-card">
-            <img
-              src={Why}
-              alt="Trust"
-              className="feature-icon"
-            />
+            <img src={Why} alt="Trust" className="feature-icon" />
             <h3>Trusted by Experts</h3>
             <p>Our products are backed by rigorous clinical research.</p>
           </div>
           <div className="feature-card">
-            <img
-              src={Quality}
-              alt="Quality"
-              className="feature-icon"
-            />
+            <img src={Quality} alt="Quality" className="feature-icon" />
             <h3>Quality Assurance</h3>
             <p>All products meet international quality standards.</p>
           </div>
           <div className="feature-card">
-            <img
-              src={Inno}
-              alt="Innovation"
-              className="feature-icon"
-            />
+            <img src={Inno} alt="Innovation" className="feature-icon" />
             <h3>Innovation in Healthcare</h3>
             <p>We strive to develop cutting-edge pharmaceutical solutions.</p>
           </div>
@@ -276,25 +252,13 @@ const Productpage1 = () => {
       <div className="photography-showcase">
         <h2>Manufacturing Process</h2>
         <div className="photo-grid">
-          <img
-            src={Dye}
-            alt="Facility 1"
-          />
-          <img
-            src={Weight}
-            alt="Facility 2"
-          />
-          <img
-            src={Compact}
-            alt="Facility 3"
-          />
-          <img
-            src={eject}
-            alt="Facility 4"
-          />
+          <img src={Dye} alt="Facility 1" />
+          <img src={Weight} alt="Facility 2" />
+          <img src={Compact} alt="Facility 3" />
+          <img src={eject} alt="Facility 4" />
         </div>
       </div>
-      <Pform/>
+      <Pform />
     </>
   );
 };
