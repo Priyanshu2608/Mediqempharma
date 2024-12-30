@@ -116,11 +116,15 @@ body {
   cursor: pointer;
 }
 
-.slider-image {
-  max-width: 80%;
-  height: auto;
-  border-radius: 8px;
-}
+
+  .slider-image {
+    width: 100%; /* Ensure it takes up the container's width */
+    max-width: 550px; /* Set a maximum width for consistency */
+    height: 300px; /* Set a fixed height for uniformity */
+    object-fit: cover; /* Maintain aspect ratio and crop if necessary */
+    border-radius: 10px; /* Optional: Keep the border-radius for aesthetic consistency */
+  }
+  
 
 .modal-product-name {
   font-size: 2rem;  /* Increased size for product name */

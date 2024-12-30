@@ -9,14 +9,19 @@ import Weight from "../../assets/weight.jpg";
 import Compact from "../../assets/compact.png";
 import eject from "../../assets/eject.png";
 import Pform from "./Productform";
+import Moxi from "../../assets/MOXIQEM.png";
+import Moxi3 from "../../assets/moxiqem2.png";
+import Moxicv1 from "../../assets/Moxicv1.png";
+import Moxicv2 from "../../assets/moxicv2.png";
+import Moxidds1 from "../../assets/moxidds1.png";
+import Moxidds2 from "../../assets/moxidds3.png";
 const products = [
   {
     id: 1,
     name: "MOXIQEM-CV 625",
     images: [
-      "https://via.placeholder.com/400x300?text=MOXIQEM+Image+1",
-      "https://via.placeholder.com/400x300?text=MOXIQEM+Image+2",
-      "https://via.placeholder.com/400x300?text=MOXIQEM+Image+3",
+      Moxi,
+      Moxi3,
     ],
     composition: [
       "Each film-coated tablet contains:",
@@ -42,8 +47,8 @@ const products = [
     id: 2,
     name: "MOXIQEM-CV",
     images: [
-      "https://via.placeholder.com/400x300?text=MOXIQEM+CV+Image+1",
-      "https://via.placeholder.com/400x300?text=MOXIQEM+CV+Image+2",
+      Moxicv1,
+      Moxicv2,
     ],
     composition: [
       "Each 5 ml of the reconstituted suspension contains:",
@@ -76,8 +81,8 @@ const products = [
     id: 3,
     name: "MOXIQEM-CV DDS",
     images: [
-      "https://via.placeholder.com/400x300?text=MOXIQEM+CV+DDS+Image+1",
-      "https://via.placeholder.com/400x300?text=MOXIQEM+CV+DDS+Image+2",
+      Moxidds1,
+      Moxidds2,
     ],
     composition: [
       "Each 5 ml of the reconstituted suspension contains:",
