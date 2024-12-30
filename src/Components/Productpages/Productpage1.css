@@ -54,10 +54,11 @@ body {
 }
 
 .product-card-image {
-  width: 100%;
-  height: 200px;  /* Increased height for images */
-  object-fit: cover;
-  border-radius: 10px;
+  display: block;
+  width: 100%; /* Fully occupies the width of the container */
+  height: 100%; /* Fully occupies the height of the container */
+  object-fit: contain; /* Scales the image to fit inside the container without cropping */
+  border-radius: 10px; /* Keeps rounded corners */
 }
 
 .product-card-title {
@@ -294,6 +295,11 @@ body {
   .products-head {
     font-size: 2.2rem;
   }
+  .product-card-image {
+    height: auto; /* Dynamically adjusts height based on the container's width */
+    max-height: 180px; /* Prevents the image from growing too tall */
+  }
+
 
   .product-card {
     max-width: 90%;
@@ -324,9 +330,14 @@ body {
   .products-head {
     font-size: 2rem;
   }
+  .product-card-image {
+    height: auto;
+    max-height: 150px; /* Further reduces height for very small screens */
+
+  }
   .slider-image {
     max-width: 100%; /* Full width for very small screens */
-    max-height: 35vh; /* Reduce height further for compact viewports */
+    max-height: 32vh; /* Reduce height further for compact viewports */
   }
 
   .product-card {
@@ -334,6 +345,7 @@ body {
     padding: 1rem;
     margin: 0 auto 0px 30px;
     margin-right: 30px;
+    
   }
 
   .modal-content {
