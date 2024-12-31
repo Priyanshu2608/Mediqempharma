@@ -5,7 +5,7 @@
   padding: 20px;
 }
 
-/* Header Section */
+
 .about-header {
   text-align: center;
   background-color: #0f048b;
@@ -24,7 +24,7 @@
   margin-top: 10px;
 }
 
-/* Content Section */
+
 .about-content {
   display: flex;
   justify-content: space-between;
@@ -60,7 +60,7 @@
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-/* Alternate Content Layout for Even Rows */
+
 .about-content:nth-child(even) .content-left {
   order: 2;
 }
@@ -69,7 +69,6 @@
   order: 1;
 }
 
-/* Footer Section */
 .about-footer {
   background-color: #222;
   color: #fff;
@@ -84,7 +83,7 @@
   font-size: 1.1em;
 }
 
-/* General Text Styles */
+
 h2 {
   font-size: 2em;
   color: #0066cc;
@@ -95,7 +94,7 @@ p {
   font-size: 1.1em;
   line-height: 1.6;
 }
-/* Message From The Team Box */
+
 .team-message {
   background-color: #f4f7fa;
   padding: 50px 20px;
