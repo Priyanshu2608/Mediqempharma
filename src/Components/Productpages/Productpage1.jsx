@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "./Productpage1.css";
-import { motion } from "framer-motion";
+import { color, motion } from "framer-motion";
 import Why from "../../assets/whyschose.jpg";
 import Quality from "../../assets/quality.png";
 import Inno from "../../assets/inno.jpg";
@@ -69,7 +69,7 @@ const products = [
       website: "www.polestarpharma.com",
     },
   },
-    {
+  {
     id: 3,
     name: "MOXIQEM-CV DDS",
     images: [Moxidds1, Moxidds2],
@@ -99,41 +99,57 @@ const products = [
       website: "www.polestarpharma.com",
     },
   },
-    {
-      id: 4,
-      name: "BACTROFIX OINTMENT",
-      images: [
-        Bact,
-        
-      ],
-      composition: ["Composition details for product 4"],
-      color: "Color 4",
-      dosage: "Dosage 4",
-      storage: "Storage instructions for product 4",
-      caution: "Caution details for product 4",
-      manufacturer: {
-        license: "License 4",
-        company: "Company Name 4",
-        location: "Location 4",
-        website: "www.example4.com",
-      },
+  {
+    id: 4,
+    name: "BACTROFIX OINTMENT",
+    images: [Bact],
+    composition: [
+      "Mupoicin - 2% w/w",
+      "In a non-greasy ointment base",
+      "Mupirocin, sold under the brand name Bactrofix is a topical antibiotic that treats bacterial skin infections like impetigo, folliculitis, and boils. It works by stopping bacteria from growing and killing existing bacteria on the skin.",
+    ],
+    color: "White",
+    dosage: [
+      "Apply a thin film of the medication to the affected area. You can cover the area with a sterile gauze dressing (bandage). Do not use an airtight bandage (such as a plastic-covered bandage).",
+      ".Wash your hands before and after use. If you are treating a hand infection, only wash your hands before use. Do not get it in your eyes. If you do, rinse your eyes with plenty of cool tap water. Use it as directed on the prescription label at the same time every day. Do not use it more often than directed. Use the medication for the full course as directed by your care team, even if you think you are better. Do not stop using it unless your care team tells you to stop it early,",
+    ],
+    storage:
+      "Store in a cool & dry place, below 25°C. Protect from light & moisture.",
+    caution:
+      "Use as directed by the care team.This medication is for external use only. Do not take it by mouth For external use only.",
+    manufacturer: {
+      license: "Not Available",
+      company: "Not Available",
+      location: "Not Available",
+      website: "Not Available",
     },
-    {
-      id: 5,
-      name: "WELLRAFT",
-      images: [Well,],
-      composition: ["Composition details for product 5"],
-      color: "Color 5",
-      dosage: "Dosage 5",
-      storage: "Storage instructions for product 5",
-      caution: "Caution details for product 5",
-      manufacturer: {
-        license: "License 5",
-        company: "Company Name 5",
-        location: "Location 5",
-        website: "www.example5.com",
-      },
-  }
+  },
+  {
+    id: 5,
+    name: "WELLRAFT",
+    images: [Well],
+    composition: [
+      "Each 5ml contains",
+      "Sodium Alginate - 250 mg",
+      "Sodium Bicarbonate - 133.5 mg",
+      "Calcium Carbonate - 80 mg",
+      "WellRaft Oral Suspension Mint Sugar Free is a combination of alginic acid, calcium carbonate, and sodium bicarbonate. Alginic acid forms a protective foam layer that floats on top of the contents of the stomach",
+      "WellRaft Suspension Sugar Free Mint Flavour works by neutralising excess stomach acid. It also forms a protective barrier over the stomach layers which soothes burning pain in your chest. As a result, it helps in the management of gastrointestinal symptoms like acidity, acid reflux, heartburn and indigestion.",
+    ],
+    color: "Erythrosine",
+    dosage:
+      "WellRaft Oral Suspension Mint Sugar Free may be taken with or without food. Take it in the dose and duration as advised by the doctor. Children below 12 years of age should take only if the doctor advises it. Continue taking the medicine for as long as your doctor recommends.",
+    storage:
+      "Store in a cool & dry place, below 25°C. Protect from light & moisture.",
+    caution:
+      "SCHEDULE H PRESCRIPTION DRUG - CAUTION: Not to be sold by retail without the prescription of a Registered Medical Practitioner.",
+    manufacturer: {
+      license: "Not Available",
+      company: "Not Available",
+      location: "Not Available",
+      website: "Not Available",
+    },
+  },
 ];
 const Productpage1 = () => {
   const [selectedProduct, setSelectedProduct] = useState(null);

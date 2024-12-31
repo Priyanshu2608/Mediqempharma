@@ -32,7 +32,7 @@ const Firstpart = () => {
     },
     {
       title: "Sustainability",
-      description: "Committed to environmentally friendly practices.",
+      description: "Committed to environment friendly practices.",
       imageUrl:
         "https://www.escopharma.com/images/news-banner/full/data-integrity-in-the-pharmaceutical-industry.jpg",
     },
