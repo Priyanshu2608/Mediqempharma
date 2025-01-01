@@ -36,21 +36,6 @@ The website is optimized for fast load times and smooth interactions, leveraging
 
 ---
 
-## 📸 Screenshots  
-
-### Homepage  
-![Homepage](./screenshots/homepage.png)  
-
-### Product Showcase  
-![Product Showcase](./screenshots/product-showcase.png)  
-
-### Responsive Design  
-![Responsive Design](./screenshots/responsive-design.png)  
-
-*(Replace the paths with your actual screenshot paths)*  
-
----
-
 ## 🧑‍💻 How to Run Locally  
 
 1. **Clone the Repository**:  
