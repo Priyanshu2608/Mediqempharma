@@ -5,11 +5,11 @@ import Home from "./Components/Home";
 import Products from "./Components/Products";
 import Contact from "./Components/Contact";
 import About from "./Components/About";
-import { SpeedInsights } from '@vercel/speed-insights/react';
+
 
 const App = () => {
   return (
-    <>
+    
     <Router>
       <Navbar />
       <Routes>
@@ -19,8 +19,8 @@ const App = () => {
         <Route path="/about" element={<About />} />
       </Routes>
     </Router>
-    <SpeedInsights />
-    </>
+    
+    
   );
 };
 
